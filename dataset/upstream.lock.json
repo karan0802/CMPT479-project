@@ -1,0 +1,44 @@
+{
+  "dinero.js": {
+    "url": "https://github.com/dinerojs/dinero.js.git",
+    "tag": "v2.0.2",
+    "sha": "cc7df3e6d986445eab42dffc33f8c2d14e4d588a",
+    "license": "MIT",
+    "packageManager": "npm@11.11.0",
+    "node": ">=20.0.0",
+    "nvmrc": "24",
+    "vitest": "^4.0.18",
+    "typescript": "^5.7.3",
+    "mode": "A",
+    "sourceRoot": "packages/dinero.js/src",
+    "notes": "npm workspace; mutate target files live under packages/dinero.js/src/{api,core,calculator,bigint}"
+  },
+  "colord": {
+    "url": "https://github.com/omgovich/colord.git",
+    "tag": "v2.9",
+    "sha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+    "license": "MIT",
+    "packageManager": null,
+    "node": null,
+    "jest": "^26.6.3",
+    "typescript": "^4.2.3",
+    "vitest": null,
+    "mode": "B",
+    "sourceRoot": "src",
+    "notes": "Own tooling is Jest 26 + TypeScript 4.2; extracted verbatim into harness/extracted/colord instead of installing Vitest/Stryker in place."
+  },
+  "ibantools": {
+    "url": "https://github.com/Simplify/ibantools.git",
+    "tag": "4.5.4",
+    "sha": "1307a672a86055227d6c693077373997a65cc50b",
+    "license": "MIT OR MPL-2.0",
+    "packageManager": null,
+    "node": null,
+    "mocha": "^11.0.1",
+    "typescript": "^6.0",
+    "vitest": null,
+    "mode": "B",
+    "sourceRoot": "src",
+    "notes": "Single file src/ibantools.ts (1844 lines, 13 exported functions). Own tooling is Mocha; extracted verbatim into harness/extracted/ibantools. Mutate by line range per function."
+  }
+}

@@ -39,4 +39,8 @@ Our own code is MIT licensed — see [LICENSE](LICENSE). Code borrowed from upst
 
 ## Attribution
 
-_To be filled in once upstream libraries are chosen and pinned (Phase 1)._
+Functions in this dataset are drawn from three open-source TypeScript libraries, pinned by tag/commit in [`dataset/upstream.lock.json`](dataset/upstream.lock.json), with their original licenses kept in [`third_party/licenses/`](third_party/licenses/):
+
+- [dinero.js](https://github.com/dinerojs/dinero.js) (`v2.0.2`) — MIT
+- [colord](https://github.com/omgovich/colord) (`v2.9`) — MIT
+- [ibantools](https://github.com/Simplify/ibantools) (`4.5.4`) — MIT OR MPL-2.0
