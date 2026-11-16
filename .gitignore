@@ -1,0 +1,12 @@
+node_modules/
+upstream/
+.env
+.stryker-tmp/
+reports/
+coverage/
+*.log
+.DS_Store
+dist/
+
+# Internal planning document, not part of the project deliverable
+CMPT 479 – Stage 1 Plan Dataset Preparation.md
