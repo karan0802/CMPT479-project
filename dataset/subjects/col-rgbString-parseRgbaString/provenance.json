@@ -1,0 +1,12 @@
+{
+  "functionId": "col-rgbString-parseRgbaString",
+  "status": "primary",
+  "repo": "omgovich/colord",
+  "tag": "v2.9",
+  "sha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+  "originalPath": "src/colorModels/rgbString.ts",
+  "lineStart": 18,
+  "lineEnd": 33,
+  "license": "MIT",
+  "sha256": "54966f6b4aa068fe1c8082c52294cb9557df2ff5b67c336220b7ec04978c7619"
+}

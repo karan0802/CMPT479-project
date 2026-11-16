@@ -1,0 +1,12 @@
+{
+  "functionId": "col-hex-parseHex",
+  "status": "primary",
+  "repo": "omgovich/colord",
+  "tag": "v2.9",
+  "sha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+  "originalPath": "src/colorModels/hex.ts",
+  "lineStart": 8,
+  "lineEnd": 34,
+  "license": "MIT",
+  "sha256": "52c885cd86312686a16507bdaa333f4e46a0dfa683eb6207c8280cef588821da"
+}

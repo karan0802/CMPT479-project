@@ -25,7 +25,7 @@ Can static analysis of AI-generated TypeScript unit tests reliably flag weak ass
 - [x] Three upstream repositories chosen, trialled and pinned
 - [x] Per-library test/coverage/mutation harness configured
 - [ ] Tracer-bullet spike passed on all three libraries
-- [ ] 24 functions selected (manifest.json)
+- [x] 24 functions selected (manifest.json)
 - [ ] Test suites generated for all 24 functions
 - [ ] Suites validated, quarantined where needed, and frozen
 

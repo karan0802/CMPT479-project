@@ -1,0 +1,12 @@
+{
+  "functionId": "col-lab-rgbaToLaba",
+  "status": "reserve",
+  "repo": "omgovich/colord",
+  "tag": "v2.9",
+  "sha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+  "originalPath": "src/colorModels/lab.ts",
+  "lineStart": 49,
+  "lineEnd": 66,
+  "license": "MIT",
+  "sha256": "e20a646fd254ef812eaf7861f62b9625f88cde6988cf658a00b701bf1f5661a6"
+}

@@ -1,0 +1,12 @@
+{
+  "functionId": "din-api-toDecimal",
+  "status": "primary",
+  "repo": "dinerojs/dinero.js",
+  "tag": "v2.0.2",
+  "sha": "cc7df3e6d986445eab42dffc33f8c2d14e4d588a",
+  "originalPath": "packages/dinero.js/src/core/api/toDecimal.ts",
+  "lineStart": 22,
+  "lineEnd": 55,
+  "license": "MIT",
+  "sha256": "54ba6e32a31b1a7aaad38298d0c43af5db27c28cf320f92c0fb4b5e686e8ad3b"
+}

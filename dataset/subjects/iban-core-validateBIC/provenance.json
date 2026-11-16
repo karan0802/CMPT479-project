@@ -1,0 +1,12 @@
+{
+  "functionId": "iban-core-validateBIC",
+  "status": "reserve",
+  "repo": "Simplify/ibantools",
+  "tag": "4.5.4",
+  "sha": "1307a672a86055227d6c693077373997a65cc50b",
+  "originalPath": "ibantools.ts",
+  "lineStart": 518,
+  "lineEnd": 537,
+  "license": "MIT OR MPL-2.0",
+  "sha256": "7792b6e8cf44efa73fc103336b47896d702fcfdc1649bedcb121000066b698a8"
+}

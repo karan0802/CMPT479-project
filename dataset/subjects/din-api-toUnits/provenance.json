@@ -1,0 +1,12 @@
+{
+  "functionId": "din-api-toUnits",
+  "status": "primary",
+  "repo": "dinerojs/dinero.js",
+  "tag": "v2.0.2",
+  "sha": "cc7df3e6d986445eab42dffc33f8c2d14e4d588a",
+  "originalPath": "packages/dinero.js/src/core/api/toUnits.ts",
+  "lineStart": 18,
+  "lineEnd": 49,
+  "license": "MIT",
+  "sha256": "c0a08e706ca6075a52dc0481fced324b9704391eb23fd1733fff8d70b4c4c6db"
+}

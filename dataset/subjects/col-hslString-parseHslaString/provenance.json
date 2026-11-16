@@ -1,0 +1,12 @@
+{
+  "functionId": "col-hslString-parseHslaString",
+  "status": "primary",
+  "repo": "omgovich/colord",
+  "tag": "v2.9",
+  "sha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+  "originalPath": "src/colorModels/hslString.ts",
+  "lineStart": 17,
+  "lineEnd": 30,
+  "license": "MIT",
+  "sha256": "772e63180920437f977071f3fdb2cf293df8658a5135d8b5bc8474ff7dfa0790"
+}

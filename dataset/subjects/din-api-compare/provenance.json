@@ -1,0 +1,12 @@
+{
+  "functionId": "din-api-compare",
+  "status": "primary",
+  "repo": "dinerojs/dinero.js",
+  "tag": "v2.0.2",
+  "sha": "cc7df3e6d986445eab42dffc33f8c2d14e4d588a",
+  "originalPath": "packages/dinero.js/src/calculator/bigint/api/compare.ts",
+  "lineStart": 12,
+  "lineEnd": 23,
+  "license": "MIT",
+  "sha256": "70c12aab1c61c1e3e2f0856600fa161072884590123d4eeb7e303221a64b9bef"
+}

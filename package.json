@@ -1,0 +1,13 @@
+{
+  "name": "cmpt479-project",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "mine-candidates": "tsx scripts/mine-candidates.ts",
+    "select": "tsx scripts/select.ts"
+  },
+  "devDependencies": {
+    "typescript": "5.7.3",
+    "tsx": "^4.19.0"
+  }
+}

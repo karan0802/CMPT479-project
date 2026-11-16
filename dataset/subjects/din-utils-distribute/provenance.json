@@ -1,0 +1,12 @@
+{
+  "functionId": "din-utils-distribute",
+  "status": "primary",
+  "repo": "dinerojs/dinero.js",
+  "tag": "v2.0.2",
+  "sha": "cc7df3e6d986445eab42dffc33f8c2d14e4d588a",
+  "originalPath": "packages/dinero.js/src/core/utils/distribute.ts",
+  "lineStart": 17,
+  "lineEnd": 78,
+  "license": "MIT",
+  "sha256": "87867645f6e799820373e614d70764bafa129ebb745d7d771b196e8a45c0515b"
+}

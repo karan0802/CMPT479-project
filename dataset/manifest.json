@@ -1,0 +1,830 @@
+[
+  {
+    "id": "din-utils-distribute",
+    "status": "primary",
+    "repo": "dinerojs/dinero.js",
+    "upstreamSha": "cc7df3e6d986445eab42dffc33f8c2d14e4d588a",
+    "sourcePath": "upstream/dinero.js/packages/dinero.js/src/core/utils/distribute.ts",
+    "exportName": "distribute",
+    "lineStart": 17,
+    "lineEnd": 78,
+    "loc": 42,
+    "branchCount": 6,
+    "paramCount": 1,
+    "category": "utils",
+    "sizeBand": "medium",
+    "internalImports": [
+      "./equal",
+      "./greaterThan",
+      "./greaterThanOrEqual",
+      "./lessThan"
+    ],
+    "importStatement": "./distribute",
+    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/utils/distribute.generated.test.ts",
+    "mutantCount": 26,
+    "selection": {
+      "seed": 479,
+      "rank": 4,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "A",
+      "tracer": false
+    }
+  },
+  {
+    "id": "din-allocate-safeAllocate",
+    "status": "primary",
+    "repo": "dinerojs/dinero.js",
+    "upstreamSha": "cc7df3e6d986445eab42dffc33f8c2d14e4d588a",
+    "sourcePath": "upstream/dinero.js/packages/dinero.js/src/core/api/allocate.ts",
+    "exportName": "safeAllocate",
+    "lineStart": 52,
+    "lineEnd": 95,
+    "loc": 39,
+    "branchCount": 4,
+    "paramCount": 1,
+    "category": "allocate",
+    "sizeBand": "medium",
+    "internalImports": [
+      "../checks",
+      "../helpers",
+      "../utils",
+      "./transformScale"
+    ],
+    "importStatement": "./allocate",
+    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/api/allocate.generated.test.ts",
+    "mutantCount": 21,
+    "selection": {
+      "seed": 479,
+      "rank": 5,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "A",
+      "tracer": false
+    }
+  },
+  {
+    "id": "din-divide-halfUp",
+    "status": "primary",
+    "repo": "dinerojs/dinero.js",
+    "upstreamSha": "cc7df3e6d986445eab42dffc33f8c2d14e4d588a",
+    "sourcePath": "upstream/dinero.js/packages/dinero.js/src/core/divide/halfUp.ts",
+    "exportName": "halfUp",
+    "lineStart": 21,
+    "lineEnd": 41,
+    "loc": 18,
+    "branchCount": 5,
+    "paramCount": 3,
+    "category": "divide",
+    "sizeBand": "medium",
+    "internalImports": [
+      "../utils",
+      "."
+    ],
+    "importStatement": "./halfUp",
+    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/divide/halfUp.generated.test.ts",
+    "mutantCount": 13,
+    "selection": {
+      "seed": 479,
+      "rank": 6,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "A",
+      "tracer": false
+    }
+  },
+  {
+    "id": "din-api-compare",
+    "status": "primary",
+    "repo": "dinerojs/dinero.js",
+    "upstreamSha": "cc7df3e6d986445eab42dffc33f8c2d14e4d588a",
+    "sourcePath": "upstream/dinero.js/packages/dinero.js/src/calculator/bigint/api/compare.ts",
+    "exportName": "compare",
+    "lineStart": 12,
+    "lineEnd": 23,
+    "loc": 9,
+    "branchCount": 2,
+    "paramCount": 2,
+    "category": "api",
+    "sizeBand": "small",
+    "internalImports": [
+      "../../../core"
+    ],
+    "importStatement": "./compare",
+    "testPath": "upstream/dinero.js/packages/dinero.js/src/calculator/bigint/api/compare.generated.test.ts",
+    "mutantCount": 11,
+    "selection": {
+      "seed": 479,
+      "rank": 8,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "A",
+      "tracer": false
+    }
+  },
+  {
+    "id": "din-api-toDecimal",
+    "status": "primary",
+    "repo": "dinerojs/dinero.js",
+    "upstreamSha": "cc7df3e6d986445eab42dffc33f8c2d14e4d588a",
+    "sourcePath": "upstream/dinero.js/packages/dinero.js/src/core/api/toDecimal.ts",
+    "exportName": "toDecimal",
+    "lineStart": 22,
+    "lineEnd": 55,
+    "loc": 24,
+    "branchCount": 2,
+    "paramCount": 1,
+    "category": "api",
+    "sizeBand": "small",
+    "internalImports": [
+      "../checks",
+      "../helpers",
+      "../utils",
+      "./toUnits"
+    ],
+    "importStatement": "./toDecimal",
+    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/api/toDecimal.generated.test.ts",
+    "mutantCount": null,
+    "selection": {
+      "seed": 479,
+      "rank": 9,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "A",
+      "tracer": false
+    }
+  },
+  {
+    "id": "din-api-toUnits",
+    "status": "primary",
+    "repo": "dinerojs/dinero.js",
+    "upstreamSha": "cc7df3e6d986445eab42dffc33f8c2d14e4d588a",
+    "sourcePath": "upstream/dinero.js/packages/dinero.js/src/core/api/toUnits.ts",
+    "exportName": "toUnits",
+    "lineStart": 18,
+    "lineEnd": 49,
+    "loc": 24,
+    "branchCount": 2,
+    "paramCount": 1,
+    "category": "api",
+    "sizeBand": "small",
+    "internalImports": [
+      "../utils"
+    ],
+    "importStatement": "./toUnits",
+    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/api/toUnits.generated.test.ts",
+    "mutantCount": null,
+    "selection": {
+      "seed": 479,
+      "rank": 10,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "A",
+      "tracer": false
+    }
+  },
+  {
+    "id": "iban-core-isValidBIC",
+    "status": "primary",
+    "repo": "Simplify/ibantools",
+    "upstreamSha": "1307a672a86055227d6c693077373997a65cc50b",
+    "sourcePath": "harness/extracted/ibantools/ibantools.ts",
+    "exportName": "isValidBIC",
+    "lineStart": 485,
+    "lineEnd": 492,
+    "loc": 8,
+    "branchCount": 2,
+    "paramCount": 1,
+    "category": "core",
+    "sizeBand": "small",
+    "internalImports": [],
+    "importStatement": "./ibantools",
+    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "mutantCount": 24,
+    "selection": {
+      "seed": 479,
+      "rank": 1,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "iban-core-isQRIBAN",
+    "status": "primary",
+    "repo": "Simplify/ibantools",
+    "upstreamSha": "1307a672a86055227d6c693077373997a65cc50b",
+    "sourcePath": "harness/extracted/ibantools/ibantools.ts",
+    "exportName": "isQRIBAN",
+    "lineStart": 217,
+    "lineEnd": 224,
+    "loc": 8,
+    "branchCount": 3,
+    "paramCount": 1,
+    "category": "core",
+    "sizeBand": "small",
+    "internalImports": [],
+    "importStatement": "./ibantools",
+    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "mutantCount": 26,
+    "selection": {
+      "seed": 479,
+      "rank": 2,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "iban-core-extractBIC",
+    "status": "primary",
+    "repo": "Simplify/ibantools",
+    "upstreamSha": "1307a672a86055227d6c693077373997a65cc50b",
+    "sourcePath": "harness/extracted/ibantools/ibantools.ts",
+    "exportName": "extractBIC",
+    "lineStart": 558,
+    "lineEnd": 572,
+    "loc": 15,
+    "branchCount": 3,
+    "paramCount": 1,
+    "category": "core",
+    "sizeBand": "small",
+    "internalImports": [],
+    "importStatement": "./ibantools",
+    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "mutantCount": 22,
+    "selection": {
+      "seed": 479,
+      "rank": 3,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "iban-core-friendlyFormatIBAN",
+    "status": "primary",
+    "repo": "Simplify/ibantools",
+    "upstreamSha": "1307a672a86055227d6c693077373997a65cc50b",
+    "sourcePath": "harness/extracted/ibantools/ibantools.ts",
+    "exportName": "friendlyFormatIBAN",
+    "lineStart": 356,
+    "lineEnd": 369,
+    "loc": 14,
+    "branchCount": 4,
+    "paramCount": 2,
+    "category": "core",
+    "sizeBand": "medium",
+    "internalImports": [],
+    "importStatement": "./ibantools",
+    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "mutantCount": 23,
+    "selection": {
+      "seed": 479,
+      "rank": 4,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "iban-core-isSEPACountry",
+    "status": "primary",
+    "repo": "Simplify/ibantools",
+    "upstreamSha": "1307a672a86055227d6c693077373997a65cc50b",
+    "sourcePath": "harness/extracted/ibantools/ibantools.ts",
+    "exportName": "isSEPACountry",
+    "lineStart": 196,
+    "lineEnd": 204,
+    "loc": 9,
+    "branchCount": 4,
+    "paramCount": 1,
+    "category": "core",
+    "sizeBand": "medium",
+    "internalImports": [],
+    "importStatement": "./ibantools",
+    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "mutantCount": 15,
+    "selection": {
+      "seed": 479,
+      "rank": 5,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "iban-core-extractIBAN",
+    "status": "primary",
+    "repo": "Simplify/ibantools",
+    "upstreamSha": "1307a672a86055227d6c693077373997a65cc50b",
+    "sourcePath": "harness/extracted/ibantools/ibantools.ts",
+    "exportName": "extractIBAN",
+    "lineStart": 284,
+    "lineEnd": 315,
+    "loc": 32,
+    "branchCount": 6,
+    "paramCount": 1,
+    "category": "core",
+    "sizeBand": "medium",
+    "internalImports": [],
+    "importStatement": "./ibantools",
+    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "mutantCount": 33,
+    "selection": {
+      "seed": 479,
+      "rank": 6,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "iban-core-isValidBBAN",
+    "status": "primary",
+    "repo": "Simplify/ibantools",
+    "upstreamSha": "1307a672a86055227d6c693077373997a65cc50b",
+    "sourcePath": "harness/extracted/ibantools/ibantools.ts",
+    "exportName": "isValidBBAN",
+    "lineStart": 161,
+    "lineEnd": 183,
+    "loc": 20,
+    "branchCount": 13,
+    "paramCount": 2,
+    "category": "core",
+    "sizeBand": "large",
+    "internalImports": [],
+    "importStatement": "./ibantools",
+    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "mutantCount": 57,
+    "selection": {
+      "seed": 479,
+      "rank": 7,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "iban-core-validateIBAN",
+    "status": "primary",
+    "repo": "Simplify/ibantools",
+    "upstreamSha": "1307a672a86055227d6c693077373997a65cc50b",
+    "sourcePath": "harness/extracted/ibantools/ibantools.ts",
+    "exportName": "validateIBAN",
+    "lineStart": 105,
+    "lineEnd": 147,
+    "loc": 40,
+    "branchCount": 20,
+    "paramCount": 2,
+    "category": "core",
+    "sizeBand": "large",
+    "internalImports": [],
+    "importStatement": "./ibantools",
+    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "mutantCount": 91,
+    "selection": {
+      "seed": 479,
+      "rank": 8,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "iban-core-validateBIC",
+    "status": "reserve",
+    "repo": "Simplify/ibantools",
+    "upstreamSha": "1307a672a86055227d6c693077373997a65cc50b",
+    "sourcePath": "harness/extracted/ibantools/ibantools.ts",
+    "exportName": "validateBIC",
+    "lineStart": 518,
+    "lineEnd": 537,
+    "loc": 20,
+    "branchCount": 5,
+    "paramCount": 1,
+    "category": "core",
+    "sizeBand": "medium",
+    "internalImports": [],
+    "importStatement": "./ibantools",
+    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "mutantCount": null,
+    "selection": {
+      "seed": 479,
+      "rank": 9,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "iban-core-composeIBAN",
+    "status": "reserve",
+    "repo": "Simplify/ibantools",
+    "upstreamSha": "1307a672a86055227d6c693077373997a65cc50b",
+    "sourcePath": "harness/extracted/ibantools/ibantools.ts",
+    "exportName": "composeIBAN",
+    "lineStart": 242,
+    "lineEnd": 262,
+    "loc": 21,
+    "branchCount": 11,
+    "paramCount": 1,
+    "category": "core",
+    "sizeBand": "large",
+    "internalImports": [],
+    "importStatement": "./ibantools",
+    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "mutantCount": null,
+    "selection": {
+      "seed": 479,
+      "rank": 10,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "col-src-parse",
+    "status": "primary",
+    "repo": "omgovich/colord",
+    "upstreamSha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+    "sourcePath": "harness/extracted/colord/src/parse.ts",
+    "exportName": "parse",
+    "lineStart": 37,
+    "lineEnd": 49,
+    "loc": 9,
+    "branchCount": 3,
+    "paramCount": 1,
+    "category": "src",
+    "sizeBand": "small",
+    "internalImports": [
+      "./types"
+    ],
+    "importStatement": "./parse",
+    "testPath": "harness/extracted/colord/src/parse.generated.test.ts",
+    "mutantCount": 17,
+    "selection": {
+      "seed": 479,
+      "rank": 1,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "col-rgb-parseRgba",
+    "status": "primary",
+    "repo": "omgovich/colord",
+    "upstreamSha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+    "sourcePath": "harness/extracted/colord/src/colorModels/rgb.ts",
+    "exportName": "parseRgba",
+    "lineStart": 19,
+    "lineEnd": 28,
+    "loc": 9,
+    "branchCount": 3,
+    "paramCount": 1,
+    "category": "rgb",
+    "sizeBand": "small",
+    "internalImports": [
+      "../helpers"
+    ],
+    "importStatement": "./rgb",
+    "testPath": "harness/extracted/colord/src/colorModels/rgb.generated.test.ts",
+    "mutantCount": 10,
+    "selection": {
+      "seed": 479,
+      "rank": 2,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "col-hsl-hsvaToHsla",
+    "status": "primary",
+    "repo": "omgovich/colord",
+    "upstreamSha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+    "sourcePath": "harness/extracted/colord/src/colorModels/hsl.ts",
+    "exportName": "hsvaToHsla",
+    "lineStart": 44,
+    "lineEnd": 53,
+    "loc": 9,
+    "branchCount": 3,
+    "paramCount": 1,
+    "category": "hsl",
+    "sizeBand": "small",
+    "internalImports": [],
+    "importStatement": "./hsl",
+    "testPath": "harness/extracted/colord/src/colorModels/hsl.generated.test.ts",
+    "mutantCount": 24,
+    "selection": {
+      "seed": 479,
+      "rank": 3,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "col-hslString-parseHslaString",
+    "status": "primary",
+    "repo": "omgovich/colord",
+    "upstreamSha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+    "sourcePath": "harness/extracted/colord/src/colorModels/hslString.ts",
+    "exportName": "parseHslaString",
+    "lineStart": 17,
+    "lineEnd": 30,
+    "loc": 11,
+    "branchCount": 4,
+    "paramCount": 1,
+    "category": "hslString",
+    "sizeBand": "medium",
+    "internalImports": [
+      "../helpers",
+      "./hsl"
+    ],
+    "importStatement": "./hslString",
+    "testPath": "harness/extracted/colord/src/colorModels/hslString.generated.test.ts",
+    "mutantCount": 12,
+    "selection": {
+      "seed": 479,
+      "rank": 4,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "col-cmyk-parseCmyka",
+    "status": "primary",
+    "repo": "omgovich/colord",
+    "upstreamSha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+    "sourcePath": "harness/extracted/colord/src/colorModels/cmyk.ts",
+    "exportName": "parseCmyka",
+    "lineStart": 62,
+    "lineEnd": 74,
+    "loc": 11,
+    "branchCount": 4,
+    "paramCount": 1,
+    "category": "cmyk",
+    "sizeBand": "medium",
+    "internalImports": [
+      "../helpers"
+    ],
+    "importStatement": "./cmyk",
+    "testPath": "harness/extracted/colord/src/colorModels/cmyk.generated.test.ts",
+    "mutantCount": 13,
+    "selection": {
+      "seed": 479,
+      "rank": 5,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "col-hex-parseHex",
+    "status": "primary",
+    "repo": "omgovich/colord",
+    "upstreamSha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+    "sourcePath": "harness/extracted/colord/src/colorModels/hex.ts",
+    "exportName": "parseHex",
+    "lineStart": 8,
+    "lineEnd": 34,
+    "loc": 22,
+    "branchCount": 6,
+    "paramCount": 1,
+    "category": "hex",
+    "sizeBand": "medium",
+    "internalImports": [
+      "../helpers"
+    ],
+    "importStatement": "./hex",
+    "testPath": "harness/extracted/colord/src/colorModels/hex.generated.test.ts",
+    "mutantCount": 35,
+    "selection": {
+      "seed": 479,
+      "rank": 6,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "col-rgbString-parseRgbaString",
+    "status": "primary",
+    "repo": "omgovich/colord",
+    "upstreamSha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+    "sourcePath": "harness/extracted/colord/src/colorModels/rgbString.ts",
+    "exportName": "parseRgbaString",
+    "lineStart": 18,
+    "lineEnd": 33,
+    "loc": 11,
+    "branchCount": 9,
+    "paramCount": 1,
+    "category": "rgbString",
+    "sizeBand": "large",
+    "internalImports": [
+      "./rgb"
+    ],
+    "importStatement": "./rgbString",
+    "testPath": "harness/extracted/colord/src/colorModels/rgbString.generated.test.ts",
+    "mutantCount": 25,
+    "selection": {
+      "seed": 479,
+      "rank": 7,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "col-lab-parseLaba",
+    "status": "primary",
+    "repo": "omgovich/colord",
+    "upstreamSha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+    "sourcePath": "harness/extracted/colord/src/colorModels/lab.ts",
+    "exportName": "parseLaba",
+    "lineStart": 32,
+    "lineEnd": 43,
+    "loc": 10,
+    "branchCount": 3,
+    "paramCount": 1,
+    "category": "lab",
+    "sizeBand": "small",
+    "internalImports": [
+      "../helpers"
+    ],
+    "importStatement": "./lab",
+    "testPath": "harness/extracted/colord/src/colorModels/lab.generated.test.ts",
+    "mutantCount": null,
+    "selection": {
+      "seed": 479,
+      "rank": 9,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "col-hwbString-parseHwbaString",
+    "status": "reserve",
+    "repo": "omgovich/colord",
+    "upstreamSha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+    "sourcePath": "harness/extracted/colord/src/colorModels/hwbString.ts",
+    "exportName": "parseHwbaString",
+    "lineStart": 13,
+    "lineEnd": 26,
+    "loc": 11,
+    "branchCount": 3,
+    "paramCount": 1,
+    "category": "hwbString",
+    "sizeBand": "small",
+    "internalImports": [
+      "../helpers",
+      "./hwb"
+    ],
+    "importStatement": "./hwbString",
+    "testPath": "harness/extracted/colord/src/colorModels/hwbString.generated.test.ts",
+    "mutantCount": null,
+    "selection": {
+      "seed": 479,
+      "rank": 10,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "col-hsl-hslaToHsva",
+    "status": "primary",
+    "repo": "omgovich/colord",
+    "upstreamSha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+    "sourcePath": "harness/extracted/colord/src/colorModels/hsl.ts",
+    "exportName": "hslaToHsva",
+    "lineStart": 33,
+    "lineEnd": 42,
+    "loc": 9,
+    "branchCount": 2,
+    "paramCount": 1,
+    "category": "hsl",
+    "sizeBand": "small",
+    "internalImports": [],
+    "importStatement": "./hsl",
+    "testPath": "harness/extracted/colord/src/colorModels/hsl.generated.test.ts",
+    "mutantCount": 18,
+    "selection": {
+      "seed": 479,
+      "rank": 11,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "col-hwb-parseHwba",
+    "status": "primary",
+    "repo": "omgovich/colord",
+    "upstreamSha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+    "sourcePath": "harness/extracted/colord/src/colorModels/hwb.ts",
+    "exportName": "parseHwba",
+    "lineStart": 36,
+    "lineEnd": 47,
+    "loc": 10,
+    "branchCount": 3,
+    "paramCount": 1,
+    "category": "hwb",
+    "sizeBand": "small",
+    "internalImports": [
+      "../helpers"
+    ],
+    "importStatement": "./hwb",
+    "testPath": "harness/extracted/colord/src/colorModels/hwb.generated.test.ts",
+    "mutantCount": 10,
+    "selection": {
+      "seed": 479,
+      "rank": 12,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  },
+  {
+    "id": "col-lab-rgbaToLaba",
+    "status": "reserve",
+    "repo": "omgovich/colord",
+    "upstreamSha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+    "sourcePath": "harness/extracted/colord/src/colorModels/lab.ts",
+    "exportName": "rgbaToLaba",
+    "lineStart": 49,
+    "lineEnd": 66,
+    "loc": 15,
+    "branchCount": 3,
+    "paramCount": 1,
+    "category": "lab",
+    "sizeBand": "small",
+    "internalImports": [
+      "./xyz"
+    ],
+    "importStatement": "./lab",
+    "testPath": "harness/extracted/colord/src/colorModels/lab.generated.test.ts",
+    "mutantCount": null,
+    "selection": {
+      "seed": 479,
+      "rank": 13,
+      "replaces": null
+    },
+    "notes": {
+      "mode": "B",
+      "tracer": false
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "functionId": "col-hwb-parseHwba",
+  "status": "primary",
+  "repo": "omgovich/colord",
+  "tag": "v2.9",
+  "sha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+  "originalPath": "src/colorModels/hwb.ts",
+  "lineStart": 36,
+  "lineEnd": 47,
+  "license": "MIT",
+  "sha256": "83df8289ea4f439c7c71da5b5ed30dc7c0507cd3de1b799b5323316b64763d80"
+}

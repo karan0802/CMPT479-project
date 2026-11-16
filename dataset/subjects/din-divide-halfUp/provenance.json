@@ -1,0 +1,12 @@
+{
+  "functionId": "din-divide-halfUp",
+  "status": "primary",
+  "repo": "dinerojs/dinero.js",
+  "tag": "v2.0.2",
+  "sha": "cc7df3e6d986445eab42dffc33f8c2d14e4d588a",
+  "originalPath": "packages/dinero.js/src/core/divide/halfUp.ts",
+  "lineStart": 21,
+  "lineEnd": 41,
+  "license": "MIT",
+  "sha256": "ec10416d04b66e0a6cb04e18ec9127fa106f30b168f6ff1c415c30b36ef3b5ec"
+}

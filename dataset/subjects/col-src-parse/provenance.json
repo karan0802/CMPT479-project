@@ -1,0 +1,12 @@
+{
+  "functionId": "col-src-parse",
+  "status": "primary",
+  "repo": "omgovich/colord",
+  "tag": "v2.9",
+  "sha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+  "originalPath": "src/parse.ts",
+  "lineStart": 37,
+  "lineEnd": 49,
+  "license": "MIT",
+  "sha256": "ad7a21121b6340ae45f1ccbd9ce6712a7856721418f24c2f36613a5bd7b0acb0"
+}

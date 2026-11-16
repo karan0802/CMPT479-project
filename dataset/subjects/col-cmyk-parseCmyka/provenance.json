@@ -1,0 +1,12 @@
+{
+  "functionId": "col-cmyk-parseCmyka",
+  "status": "primary",
+  "repo": "omgovich/colord",
+  "tag": "v2.9",
+  "sha": "efbc03d675b51b95be75a1ff9ece61b6f0f5a6ae",
+  "originalPath": "src/colorModels/cmyk.ts",
+  "lineStart": 62,
+  "lineEnd": 74,
+  "license": "MIT",
+  "sha256": "3285e84020bbcacf7de2c58a3ff7821368cd0446f2f10e8549bae78abe73071b"
+}
