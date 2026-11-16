@@ -22,8 +22,8 @@ Can static analysis of AI-generated TypeScript unit tests reliably flag weak ass
 ## Stage 1 status
 
 - [x] Repository initialized
-- [ ] Three upstream repositories chosen, trialled and pinned
-- [ ] Per-library test/coverage/mutation harness configured
+- [x] Three upstream repositories chosen, trialled and pinned
+- [x] Per-library test/coverage/mutation harness configured
 - [ ] Tracer-bullet spike passed on all three libraries
 - [ ] 24 functions selected (manifest.json)
 - [ ] Test suites generated for all 24 functions
@@ -31,7 +31,9 @@ Can static analysis of AI-generated TypeScript unit tests reliably flag weak ass
 
 ## Setup
 
-_To be filled in as the toolchain is built out in Stage 1._
+- `dataset/upstream.lock.json` pins the exact version of each upstream library we pull functions from.
+- `upstream/` (not committed) holds working clones of those libraries, cloned at the pinned commit.
+- `harness/` holds our own test/coverage/mutation toolchain: a shared setup for colord and ibantools (whose own tooling is too old to run Stryker directly, so their source is copied verbatim into `harness/extracted/`), plus patch/config files for dinero.js, which runs the toolchain in place.
 
 ## License
 

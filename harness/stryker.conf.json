@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "testRunner": "vitest",
+  "vitest": { "configFile": "vitest.config.mts" },
+  "checkers": ["typescript"],
+  "tsconfigFile": "tsconfig.json",
+  "disableBail": true,
+  "ignorePatterns": ["reports", ".stryker-tmp"],
+  "reporters": ["json", "clear-text", "progress"],
+  "jsonReporter": { "fileName": "reports/mutation/mutation.json" },
+  "timeoutMS": 10000,
+  "timeoutFactor": 2,
+  "concurrency": 2,
+  "tempDirName": ".stryker-tmp"
+}
