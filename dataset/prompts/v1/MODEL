@@ -1,0 +1,4 @@
+generator: single fixed model, one attempt per function, no API key or billing involved
+isolation: each function is sent to a brand-new, context-free session with no access to this repository, this plan, prior requests, or upstream test files — only the system and user prompt text above
+settings: default sampling settings, not tuned per function
+exact model identity: tracked outside this repository (see the project's separate documentation)

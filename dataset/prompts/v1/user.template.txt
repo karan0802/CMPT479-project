@@ -1,0 +1,13 @@
+Write a unit test suite for the function `{{exportName}}` in the file below.
+
+Requirements:
+- Use Vitest: import { describe, it, expect } from 'vitest'
+- Import the function with: {{importStatement}}
+- Tests must be deterministic: no randomness, no network, no timers, no mocking libraries.
+- Assume the time zone is UTC.
+- Reply with one complete TypeScript test file in a single ```ts code block and nothing else.
+
+File: {{sourcePath}}
+```ts
+{{sourceCode}}
+```

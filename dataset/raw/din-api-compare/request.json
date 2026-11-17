@@ -1,0 +1,7 @@
+{
+  "functionId": "din-api-compare",
+  "promptVersion": "v1",
+  "system": "You are an experienced TypeScript developer. You write unit tests with Vitest.\n",
+  "user": "Write a unit test suite for the function `compare` in the file below.\n\nRequirements:\n- Use Vitest: import { describe, it, expect } from 'vitest'\n- Import the function with: ./compare\n- Tests must be deterministic: no randomness, no network, no timers, no mocking libraries.\n- Assume the time zone is UTC.\n- Reply with one complete TypeScript test file in a single ```ts code block and nothing else.\n\nFile: packages/dinero.js/src/calculator/bigint/api/compare.ts\n```ts\nimport { DineroComparisonOperator } from '../../../core';\nimport type { DineroBinaryOperation } from '../../../core';\n\n/**\n * Compare two bigints.\n *\n * @param a - The first bigint to compare.\n * @param b - The second bigint to compare.\n *\n * @returns Whether the two bigints are equal, or whether the first one is greater or less than the other.\n */\nexport const compare: DineroBinaryOperation<\n  bigint,\n  DineroComparisonOperator\n> = (a, b) => {\n  if (a < b) {\n    return DineroComparisonOperator.LT;\n  }\n  if (a > b) {\n    return DineroComparisonOperator.GT;\n  }\n  return DineroComparisonOperator.EQ;\n};\n```\n",
+  "sha256": "f6a557f8dd270d9a01f2197ea14e508b99f17883ae71ad97e68ff97992e8a6c7"
+}
