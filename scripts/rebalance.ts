@@ -133,7 +133,7 @@ function importStatementFor(row: Row): string {
 function testPathFor(row: Row): string {
   const dir = path.dirname(row.sourcePath);
   const base = path.basename(row.sourcePath, '.ts');
-  return path.join(dir, `${base}.generated.test.ts`);
+  return path.join(dir, `${base}.${row.exportName}.generated.test.ts`);
 }
 
 function manifestEntryFrom(row: Row, status: 'primary' | 'reserve', rank: number, lock: Record<string, { url: string; sha: string; mode: string }>, repoKey: string) {

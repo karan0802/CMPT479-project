@@ -1,0 +1,220 @@
+{
+  "din-utils-distribute": {
+    "total": 26,
+    "counts": {
+      "CompileError": 10,
+      "Killed": 12,
+      "Survived": 2,
+      "Timeout": 1,
+      "NoCoverage": 1
+    },
+    "seconds": 11.605,
+    "exitCode": 0
+  },
+  "din-allocate-safeAllocate": {
+    "total": 21,
+    "counts": {
+      "CompileError": 6,
+      "Killed": 13,
+      "Survived": 2
+    },
+    "seconds": 9.837,
+    "exitCode": 0
+  },
+  "din-divide-halfUp": {
+    "total": 13,
+    "counts": {
+      "CompileError": 1,
+      "Killed": 12
+    },
+    "seconds": 6.747,
+    "exitCode": 0
+  },
+  "din-api-compare": {
+    "total": 11,
+    "counts": {
+      "CompileError": 1,
+      "Killed": 10
+    },
+    "seconds": 5.96,
+    "exitCode": 0
+  },
+  "din-api-toDecimal": {
+    "total": 13,
+    "counts": {
+      "CompileError": 6,
+      "Killed": 7
+    },
+    "seconds": 6.78,
+    "exitCode": 0
+  },
+  "din-api-toUnits": {
+    "total": 17,
+    "counts": {
+      "CompileError": 9,
+      "Killed": 8
+    },
+    "seconds": 8.325,
+    "exitCode": 0
+  },
+  "iban-core-isValidBIC": {
+    "total": 24,
+    "counts": {
+      "CompileError": 1,
+      "Killed": 22,
+      "Survived": 1
+    },
+    "seconds": 10.58,
+    "exitCode": 0
+  },
+  "iban-core-isQRIBAN": {
+    "total": 26,
+    "counts": {
+      "CompileError": 3,
+      "Killed": 20,
+      "Survived": 3
+    },
+    "seconds": 11.293,
+    "exitCode": 0
+  },
+  "iban-core-extractBIC": {
+    "total": 22,
+    "counts": {
+      "CompileError": 2,
+      "Killed": 20
+    },
+    "seconds": 9.733,
+    "exitCode": 0
+  },
+  "iban-core-friendlyFormatIBAN": {
+    "error": "no mutation.json produced",
+    "exitCode": 1
+  },
+  "iban-core-isSEPACountry": {
+    "total": 15,
+    "counts": {
+      "CompileError": 4,
+      "Survived": 4,
+      "Killed": 7
+    },
+    "seconds": 7.115,
+    "exitCode": 0
+  },
+  "iban-core-extractIBAN": {
+    "total": 33,
+    "counts": {
+      "CompileError": 15,
+      "Killed": 18
+    },
+    "seconds": 13.544,
+    "exitCode": 0
+  },
+  "iban-core-isValidBBAN": {
+    "total": 57,
+    "counts": {
+      "CompileError": 31,
+      "Killed": 19,
+      "Survived": 7
+    },
+    "seconds": 22.791,
+    "exitCode": 0
+  },
+  "iban-core-validateIBAN": {
+    "total": 91,
+    "counts": {
+      "CompileError": 20,
+      "Killed": 56,
+      "Survived": 10,
+      "NoCoverage": 5
+    },
+    "seconds": 34.759,
+    "exitCode": 0
+  },
+  "col-src-parse": {
+    "total": 17,
+    "counts": {
+      "CompileError": 8,
+      "Killed": 9
+    },
+    "seconds": 7.418,
+    "exitCode": 0
+  },
+  "col-rgb-parseRgba": {
+    "total": 10,
+    "counts": {
+      "CompileError": 2,
+      "Killed": 8
+    },
+    "seconds": 4.965,
+    "exitCode": 0
+  },
+  "col-hsl-hsvaToHsla": {
+    "total": 24,
+    "counts": {
+      "CompileError": 2,
+      "Killed": 21,
+      "Survived": 1
+    },
+    "seconds": 10.069,
+    "exitCode": 0
+  },
+  "col-hslString-parseHslaString": {
+    "total": 12,
+    "counts": {
+      "CompileError": 7,
+      "Killed": 5
+    },
+    "seconds": 5.887,
+    "exitCode": 0
+  },
+  "col-cmyk-parseCmyka": {
+    "total": 13,
+    "counts": {
+      "CompileError": 2,
+      "Killed": 11
+    },
+    "seconds": 5.937,
+    "exitCode": 0
+  },
+  "col-hex-parseHex": {
+    "total": 35,
+    "counts": {
+      "CompileError": 13,
+      "Killed": 22
+    },
+    "seconds": 13.814,
+    "exitCode": 0
+  },
+  "col-rgbString-parseRgbaString": {
+    "total": 25,
+    "counts": {
+      "CompileError": 8,
+      "Killed": 17
+    },
+    "seconds": 10.36,
+    "exitCode": 0
+  },
+  "col-lab-parseLaba": {
+    "error": "no mutation.json produced",
+    "exitCode": 1
+  },
+  "col-hsl-hslaToHsva": {
+    "total": 18,
+    "counts": {
+      "CompileError": 2,
+      "Killed": 15,
+      "Survived": 1
+    },
+    "seconds": 7.988,
+    "exitCode": 0
+  },
+  "col-hwb-parseHwba": {
+    "total": 10,
+    "counts": {
+      "CompileError": 2,
+      "Killed": 8
+    },
+    "seconds": 4.966,
+    "exitCode": 0
+  }
+}

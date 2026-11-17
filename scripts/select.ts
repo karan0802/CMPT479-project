@@ -171,13 +171,14 @@ function importStatementFor(row: Row): string {
   return './' + path.basename(row.sourcePath, '.ts');
 }
 
-function testPathFor(row: Row, repo: string): string {
+// Folds the export name into the filename so two functions sharing a source
+// file (e.g. ibantools' single file, a couple of colord files) never get the
+// same testPath — that would make their synced test files overwrite each
+// other and confuse Stryker's test-relatedness.
+function testPathFor(row: Row, _repo: string): string {
   const dir = path.dirname(row.sourcePath);
   const base = path.basename(row.sourcePath, '.ts');
-  if (repo === 'dinero.js') {
-    return path.join(dir, `${base}.generated.test.ts`);
-  }
-  return path.join(dir, `${base}.generated.test.ts`);
+  return path.join(dir, `${base}.${row.exportName}.generated.test.ts`);
 }
 
 interface Draw {

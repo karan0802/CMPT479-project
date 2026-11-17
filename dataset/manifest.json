@@ -20,7 +20,7 @@
       "./lessThan"
     ],
     "importStatement": "./distribute",
-    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/utils/distribute.generated.test.ts",
+    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/utils/distribute.distribute.generated.test.ts",
     "mutantCount": 26,
     "selection": {
       "seed": 479,
@@ -53,7 +53,7 @@
       "./transformScale"
     ],
     "importStatement": "./allocate",
-    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/api/allocate.generated.test.ts",
+    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/api/allocate.safeAllocate.generated.test.ts",
     "mutantCount": 21,
     "selection": {
       "seed": 479,
@@ -84,7 +84,7 @@
       "."
     ],
     "importStatement": "./halfUp",
-    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/divide/halfUp.generated.test.ts",
+    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/divide/halfUp.halfUp.generated.test.ts",
     "mutantCount": 13,
     "selection": {
       "seed": 479,
@@ -114,7 +114,7 @@
       "../../../core"
     ],
     "importStatement": "./compare",
-    "testPath": "upstream/dinero.js/packages/dinero.js/src/calculator/bigint/api/compare.generated.test.ts",
+    "testPath": "upstream/dinero.js/packages/dinero.js/src/calculator/bigint/api/compare.compare.generated.test.ts",
     "mutantCount": 11,
     "selection": {
       "seed": 479,
@@ -147,7 +147,7 @@
       "./toUnits"
     ],
     "importStatement": "./toDecimal",
-    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/api/toDecimal.generated.test.ts",
+    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/api/toDecimal.toDecimal.generated.test.ts",
     "mutantCount": null,
     "selection": {
       "seed": 479,
@@ -177,7 +177,7 @@
       "../utils"
     ],
     "importStatement": "./toUnits",
-    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/api/toUnits.generated.test.ts",
+    "testPath": "upstream/dinero.js/packages/dinero.js/src/core/api/toUnits.toUnits.generated.test.ts",
     "mutantCount": null,
     "selection": {
       "seed": 479,
@@ -205,7 +205,7 @@
     "sizeBand": "small",
     "internalImports": [],
     "importStatement": "./ibantools",
-    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "testPath": "harness/extracted/ibantools/ibantools.isValidBIC.generated.test.ts",
     "mutantCount": 24,
     "selection": {
       "seed": 479,
@@ -233,7 +233,7 @@
     "sizeBand": "small",
     "internalImports": [],
     "importStatement": "./ibantools",
-    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "testPath": "harness/extracted/ibantools/ibantools.isQRIBAN.generated.test.ts",
     "mutantCount": 26,
     "selection": {
       "seed": 479,
@@ -261,7 +261,7 @@
     "sizeBand": "small",
     "internalImports": [],
     "importStatement": "./ibantools",
-    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "testPath": "harness/extracted/ibantools/ibantools.extractBIC.generated.test.ts",
     "mutantCount": 22,
     "selection": {
       "seed": 479,
@@ -289,7 +289,7 @@
     "sizeBand": "medium",
     "internalImports": [],
     "importStatement": "./ibantools",
-    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "testPath": "harness/extracted/ibantools/ibantools.friendlyFormatIBAN.generated.test.ts",
     "mutantCount": 23,
     "selection": {
       "seed": 479,
@@ -317,7 +317,7 @@
     "sizeBand": "medium",
     "internalImports": [],
     "importStatement": "./ibantools",
-    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "testPath": "harness/extracted/ibantools/ibantools.isSEPACountry.generated.test.ts",
     "mutantCount": 15,
     "selection": {
       "seed": 479,
@@ -345,7 +345,7 @@
     "sizeBand": "medium",
     "internalImports": [],
     "importStatement": "./ibantools",
-    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "testPath": "harness/extracted/ibantools/ibantools.extractIBAN.generated.test.ts",
     "mutantCount": 33,
     "selection": {
       "seed": 479,
@@ -373,7 +373,7 @@
     "sizeBand": "large",
     "internalImports": [],
     "importStatement": "./ibantools",
-    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "testPath": "harness/extracted/ibantools/ibantools.isValidBBAN.generated.test.ts",
     "mutantCount": 57,
     "selection": {
       "seed": 479,
@@ -401,7 +401,7 @@
     "sizeBand": "large",
     "internalImports": [],
     "importStatement": "./ibantools",
-    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "testPath": "harness/extracted/ibantools/ibantools.validateIBAN.generated.test.ts",
     "mutantCount": 91,
     "selection": {
       "seed": 479,
@@ -429,7 +429,7 @@
     "sizeBand": "medium",
     "internalImports": [],
     "importStatement": "./ibantools",
-    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "testPath": "harness/extracted/ibantools/ibantools.validateBIC.generated.test.ts",
     "mutantCount": null,
     "selection": {
       "seed": 479,
@@ -457,7 +457,7 @@
     "sizeBand": "large",
     "internalImports": [],
     "importStatement": "./ibantools",
-    "testPath": "harness/extracted/ibantools/ibantools.generated.test.ts",
+    "testPath": "harness/extracted/ibantools/ibantools.composeIBAN.generated.test.ts",
     "mutantCount": null,
     "selection": {
       "seed": 479,
@@ -487,7 +487,7 @@
       "./types"
     ],
     "importStatement": "./parse",
-    "testPath": "harness/extracted/colord/src/parse.generated.test.ts",
+    "testPath": "harness/extracted/colord/src/parse.parse.generated.test.ts",
     "mutantCount": 17,
     "selection": {
       "seed": 479,
@@ -517,7 +517,7 @@
       "../helpers"
     ],
     "importStatement": "./rgb",
-    "testPath": "harness/extracted/colord/src/colorModels/rgb.generated.test.ts",
+    "testPath": "harness/extracted/colord/src/colorModels/rgb.parseRgba.generated.test.ts",
     "mutantCount": 10,
     "selection": {
       "seed": 479,
@@ -545,7 +545,7 @@
     "sizeBand": "small",
     "internalImports": [],
     "importStatement": "./hsl",
-    "testPath": "harness/extracted/colord/src/colorModels/hsl.generated.test.ts",
+    "testPath": "harness/extracted/colord/src/colorModels/hsl.hsvaToHsla.generated.test.ts",
     "mutantCount": 24,
     "selection": {
       "seed": 479,
@@ -576,7 +576,7 @@
       "./hsl"
     ],
     "importStatement": "./hslString",
-    "testPath": "harness/extracted/colord/src/colorModels/hslString.generated.test.ts",
+    "testPath": "harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts",
     "mutantCount": 12,
     "selection": {
       "seed": 479,
@@ -606,7 +606,7 @@
       "../helpers"
     ],
     "importStatement": "./cmyk",
-    "testPath": "harness/extracted/colord/src/colorModels/cmyk.generated.test.ts",
+    "testPath": "harness/extracted/colord/src/colorModels/cmyk.parseCmyka.generated.test.ts",
     "mutantCount": 13,
     "selection": {
       "seed": 479,
@@ -636,7 +636,7 @@
       "../helpers"
     ],
     "importStatement": "./hex",
-    "testPath": "harness/extracted/colord/src/colorModels/hex.generated.test.ts",
+    "testPath": "harness/extracted/colord/src/colorModels/hex.parseHex.generated.test.ts",
     "mutantCount": 35,
     "selection": {
       "seed": 479,
@@ -666,7 +666,7 @@
       "./rgb"
     ],
     "importStatement": "./rgbString",
-    "testPath": "harness/extracted/colord/src/colorModels/rgbString.generated.test.ts",
+    "testPath": "harness/extracted/colord/src/colorModels/rgbString.parseRgbaString.generated.test.ts",
     "mutantCount": 25,
     "selection": {
       "seed": 479,
@@ -696,7 +696,7 @@
       "../helpers"
     ],
     "importStatement": "./lab",
-    "testPath": "harness/extracted/colord/src/colorModels/lab.generated.test.ts",
+    "testPath": "harness/extracted/colord/src/colorModels/lab.parseLaba.generated.test.ts",
     "mutantCount": null,
     "selection": {
       "seed": 479,
@@ -727,7 +727,7 @@
       "./hwb"
     ],
     "importStatement": "./hwbString",
-    "testPath": "harness/extracted/colord/src/colorModels/hwbString.generated.test.ts",
+    "testPath": "harness/extracted/colord/src/colorModels/hwbString.parseHwbaString.generated.test.ts",
     "mutantCount": null,
     "selection": {
       "seed": 479,
@@ -755,7 +755,7 @@
     "sizeBand": "small",
     "internalImports": [],
     "importStatement": "./hsl",
-    "testPath": "harness/extracted/colord/src/colorModels/hsl.generated.test.ts",
+    "testPath": "harness/extracted/colord/src/colorModels/hsl.hslaToHsva.generated.test.ts",
     "mutantCount": 18,
     "selection": {
       "seed": 479,
@@ -785,7 +785,7 @@
       "../helpers"
     ],
     "importStatement": "./hwb",
-    "testPath": "harness/extracted/colord/src/colorModels/hwb.generated.test.ts",
+    "testPath": "harness/extracted/colord/src/colorModels/hwb.parseHwba.generated.test.ts",
     "mutantCount": 10,
     "selection": {
       "seed": 479,
@@ -815,7 +815,7 @@
       "./xyz"
     ],
     "importStatement": "./lab",
-    "testPath": "harness/extracted/colord/src/colorModels/lab.generated.test.ts",
+    "testPath": "harness/extracted/colord/src/colorModels/lab.rgbaToLaba.generated.test.ts",
     "mutantCount": null,
     "selection": {
       "seed": 479,

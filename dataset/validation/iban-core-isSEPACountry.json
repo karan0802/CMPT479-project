@@ -1,0 +1,166 @@
+{
+  "functionId": "iban-core-isSEPACountry",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "isSEPACountry returns true for SEPA countries with SEPA: true": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.6230830000000012,
+        0.5849170000000044,
+        0.6005000000000038
+      ]
+    },
+    "isSEPACountry returns false for a country with an entry but no SEPA field (PK)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05720799999999571,
+        0.05620799999999804,
+        0.05483400000000671
+      ]
+    },
+    "isSEPACountry returns false for a country code with no entry in the table at all": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05466700000000202,
+        0.05141700000000071,
+        0.052124999999996646
+      ]
+    },
+    "isSEPACountry returns false for an empty string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.036583000000000254,
+        0.03624999999999545,
+        0.038167000000001394
+      ]
+    },
+    "isSEPACountry returns false for undefined": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.039749999999997954,
+        0.036999999999999034,
+        0.03795800000000327
+      ]
+    },
+    "isSEPACountry returns false for null": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03358300000000014,
+        0.03420900000000415,
+        0.033583999999997616
+      ]
+    },
+    "isSEPACountry is case sensitive and does not match lowercase country codes": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.041625000000003354,
+        0.03891699999999787,
+        0.04037500000000449
+      ]
+    },
+    "isSEPACountry does not match codes that merely resemble valid entries (whitespace/partial)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05287500000000023,
+        0.04758300000000304,
+        0.052250000000000796
+      ]
+    },
+    "isSEPACountry returns false for prototype-polluting-looking keys (object has no own property for them)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07283300000000281,
+        0.06779199999999719,
+        0.0676249999999996
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 312,
+      "covered": 32,
+      "skipped": 0,
+      "pct": 10.25
+    },
+    "functions": {
+      "total": 33,
+      "covered": 3,
+      "skipped": 0,
+      "pct": 9.09
+    },
+    "statements": {
+      "total": 328,
+      "covered": 32,
+      "skipped": 0,
+      "pct": 9.75
+    },
+    "branches": {
+      "total": 229,
+      "covered": 8,
+      "skipped": 0,
+      "pct": 3.49
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

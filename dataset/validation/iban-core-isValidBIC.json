@@ -1,0 +1,376 @@
+{
+  "functionId": "iban-core-isValidBIC",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "isValidBIC returns true for a valid 8-character BIC with a known country code": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.5510409999999979,
+        0.5174999999999983,
+        0.5400830000000028
+      ]
+    },
+    "isValidBIC returns true for a valid 11-character BIC with a known country code": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07341699999999918,
+        0.0679579999999973,
+        0.07158400000000142
+      ]
+    },
+    "isValidBIC returns true for a valid 8-character BIC in Germany": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.057124999999999204,
+        0.04550000000000409,
+        0.05212500000000375
+      ]
+    },
+    "isValidBIC returns true for a valid 11-character BIC in Great Britain": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.043832999999999345,
+        0.04570799999999764,
+        0.04795899999999875
+      ]
+    },
+    "isValidBIC returns true for a lowercase BIC that matches the regex and resolves to a known country": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05216599999999971,
+        0.04070800000000219,
+        0.05795799999999929
+      ]
+    },
+    "isValidBIC returns true for a mixed-case BIC with a numeric branch code": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03891699999999787,
+        0.03404199999999946,
+        0.044874999999997556
+      ]
+    },
+    "isValidBIC returns false when there are digits in the bank code section": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05120900000000006,
+        0.03120799999999946,
+        0.04025000000000034
+      ]
+    },
+    "isValidBIC returns false when the BIC contains spaces": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.038333000000001505,
+        0.03920800000000213,
+        0.0369580000000056
+      ]
+    },
+    "isValidBIC returns false for an empty string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.0536249999999967,
+        0.04729199999999878,
+        0.045874999999995225
+      ]
+    },
+    "isValidBIC returns false for undefined-like falsy input cast as string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.0538749999999979,
+        0.05154100000000028,
+        0.053834000000001936
+      ]
+    },
+    "isValidBIC returns false for null input": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03175000000000239,
+        0.030125000000005286,
+        0.03170799999999474
+      ]
+    },
+    "isValidBIC returns false when the BIC is too short (7 characters)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.026874999999996874,
+        0.026082999999999856,
+        0.029000000000003467
+      ]
+    },
+    "isValidBIC returns false when the BIC has 9 characters (invalid length)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02187500000000142,
+        0.021540999999999144,
+        0.022999999999996135
+      ]
+    },
+    "isValidBIC returns false when the BIC has 10 characters (invalid length)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02445799999999565,
+        0.020500000000005514,
+        0.022165999999998576
+      ]
+    },
+    "isValidBIC returns false when the BIC has 12 characters (invalid length)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02925000000000466,
+        0.019624999999997783,
+        0.026833000000003437
+      ]
+    },
+    "isValidBIC returns false when the country code segment does not exist in countrySpecs": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.022792000000002588,
+        0.02112499999999784,
+        0.023082999999999743
+      ]
+    },
+    "isValidBIC returns false when the format is correct but the country code is unknown even with a branch code": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01899999999999835,
+        0.019375000000003695,
+        0.01966600000000085
+      ]
+    },
+    "isValidBIC returns false when the bank code section contains non-alphabetic characters": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01895900000000239,
+        0.018582999999999572,
+        0.02666699999999622
+      ]
+    },
+    "isValidBIC returns false when the BIC contains a hyphen": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.026291999999997984,
+        0.018040999999996643,
+        0.027333999999996195
+      ]
+    },
+    "isValidBIC returns true for a BIC resolving to Norway": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.025375000000003922,
+        0.026665999999998746,
+        0.020458000000004972
+      ]
+    },
+    "isValidBIC returns true for a BIC resolving to Belgium": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.021000000000000796,
+        0.02420800000000156,
+        0.019333000000003153
+      ]
+    },
+    "isValidBIC returns true for a BIC resolving to Switzerland": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.023666999999996108,
+        0.025415999999999883,
+        0.023833000000003324
+      ]
+    },
+    "isValidBIC returns true for a BIC resolving to Liechtenstein": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02087500000000375,
+        0.019792000000002474,
+        0.019333000000003153
+      ]
+    },
+    "isValidBIC is case-insensitive when resolving the country code for validity": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.024665999999996302,
+        0.02400000000000091,
+        0.025834000000003243
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 312,
+      "covered": 32,
+      "skipped": 0,
+      "pct": 10.25
+    },
+    "functions": {
+      "total": 33,
+      "covered": 3,
+      "skipped": 0,
+      "pct": 9.09
+    },
+    "statements": {
+      "total": 328,
+      "covered": 32,
+      "skipped": 0,
+      "pct": 9.75
+    },
+    "branches": {
+      "total": 229,
+      "covered": 4,
+      "skipped": 0,
+      "pct": 1.74
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "functionId": "col-rgb-parseRgba",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "parseRgba parses a fully specified rgba object": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.6599170000000001,
+        0.6986249999999998,
+        0.7125829999999951
+      ]
+    },
+    "parseRgba defaults alpha to 1 when not provided": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07529199999999747,
+        0.07829200000000469,
+        0.07174999999999443
+      ]
+    },
+    "parseRgba coerces numeric string channel values to numbers": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.060208000000002926,
+        0.06433300000000486,
+        0.06374999999999886
+      ]
+    },
+    "parseRgba clamps r, g, b values above 255 down to 255": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06858300000000384,
+        0.06083300000000236,
+        0.06125000000000114
+      ]
+    },
+    "parseRgba clamps r, g, b values below 0 up to 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.057124999999999204,
+        0.054249999999996135,
+        0.05620799999999804
+      ]
+    },
+    "parseRgba clamps alpha values above 1 down to 1": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.042250000000002785,
+        0.04183400000000148,
+        0.041916999999997984
+      ]
+    },
+    "parseRgba clamps alpha values below 0 up to 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.039917000000002645,
+        0.041083000000000425,
+        0.040917000000000314
+      ]
+    },
+    "parseRgba preserves in-range values without alteration": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04679099999999892,
+        0.04895799999999895,
+        0.04550000000000409
+      ]
+    },
+    "parseRgba returns null when r is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05624999999999858,
+        0.0557500000000033,
+        0.056875000000005116
+      ]
+    },
+    "parseRgba returns null when g is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05579199999999673,
+        0.05525000000000091,
+        0.051667000000001906
+      ]
+    },
+    "parseRgba returns null when b is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03266699999999645,
+        0.03375000000000483,
+        0.0363749999999996
+      ]
+    },
+    "parseRgba returns null when r, g, and b are all missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.026832999999996332,
+        0.02587500000000631,
+        0.025083000000002187
+      ]
+    },
+    "parseRgba returns null when r is undefined": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03379199999999827,
+        0.02470899999999432,
+        0.023083999999997218
+      ]
+    },
+    "parseRgba returns null when r is null": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.022500000000000853,
+        0.019249999999999545,
+        0.019124999999995396
+      ]
+    },
+    "parseRgba returns null when g is null": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.022584000000001936,
+        0.020375000000001364,
+        0.020083999999997104
+      ]
+    },
+    "parseRgba returns null when b is null": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.021500000000003183,
+        0.02300000000000324,
+        0.025249999999999773
+      ]
+    },
+    "parseRgba treats a channel value of 0 as present (does not return null)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.036459000000000685,
+        0.026625000000002785,
+        0.02637500000000159
+      ]
+    },
+    "parseRgba ignores extraneous properties on the input object": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03754100000000449,
+        0.03712500000000318,
+        0.039540999999999826
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 11,
+      "covered": 7,
+      "skipped": 0,
+      "pct": 63.63
+    },
+    "functions": {
+      "total": 5,
+      "covered": 2,
+      "skipped": 0,
+      "pct": 40
+    },
+    "statements": {
+      "total": 14,
+      "covered": 9,
+      "skipped": 0,
+      "pct": 64.28
+    },
+    "branches": {
+      "total": 10,
+      "covered": 6,
+      "skipped": 0,
+      "pct": 60
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

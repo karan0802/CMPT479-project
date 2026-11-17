@@ -1,0 +1,292 @@
+{
+  "functionId": "iban-core-extractBIC",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "extractBIC valid 8-character BICs (no branch code) parses a well-known NL BIC correctly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.719458000000003,
+        0.6979589999999973,
+        0.7109999999999985
+      ]
+    },
+    "extractBIC valid 8-character BICs (no branch code) parses a well-known GB BIC correctly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.09354099999999477,
+        0.0914590000000004,
+        0.09283299999999883
+      ]
+    },
+    "extractBIC valid 8-character BICs (no branch code) parses a BE BIC with alphabetic location code correctly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05537500000000506,
+        0.0712079999999986,
+        0.059874999999998124
+      ]
+    },
+    "extractBIC valid 11-character BICs (with branch code) parses a DE BIC with a numeric branch code": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07237500000000097,
+        0.06775000000000375,
+        0.06070900000000279
+      ]
+    },
+    "extractBIC valid 11-character BICs (with branch code) parses a CH BIC with an alphanumeric branch code": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.052666999999999575,
+        0.052084000000000685,
+        0.04962499999999892
+      ]
+    },
+    "extractBIC case insensitivity uppercases a fully lowercase BIC before parsing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04279199999999861,
+        0.041083000000000425,
+        0.04075000000000273
+      ]
+    },
+    "extractBIC case insensitivity uppercases a mixed-case BIC before parsing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04983299999999957,
+        0.041499999999999204,
+        0.04037500000000449
+      ]
+    },
+    "extractBIC case insensitivity uppercases a lowercase branch code segment as well": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04754199999999997,
+        0.04287500000000222,
+        0.038375000000002046
+      ]
+    },
+    "extractBIC testBIC detection flags testBIC as true when the second location-code character is \"0\"": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.09933300000000145,
+        0.0940829999999977,
+        0.09104200000000162
+      ]
+    },
+    "extractBIC testBIC detection flags testBIC as false when the second location-code character is not \"0\"": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06462499999999949,
+        0.07954199999999645,
+        0.06416600000000017
+      ]
+    },
+    "extractBIC testBIC detection flags testBIC as true even when a branch code is present": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05975000000000108,
+        0.06408300000000366,
+        0.05624999999999858
+      ]
+    },
+    "extractBIC invalid BICs returns only valid:false for an empty string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03812500000000085,
+        0.047333000000001846,
+        0.035417000000002474
+      ]
+    },
+    "extractBIC invalid BICs returns only valid:false when too short (6 characters)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.028416999999997472,
+        0.037750000000002615,
+        0.03062500000000057
+      ]
+    },
+    "extractBIC invalid BICs returns only valid:false for a length that is neither 8 nor 11 (9 characters)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04945899999999881,
+        0.035834000000001254,
+        0.04862500000000125
+      ]
+    },
+    "extractBIC invalid BICs returns only valid:false for a length that is neither 8 nor 11 (10 characters)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02820899999999682,
+        0.02558400000000205,
+        0.03308299999999775
+      ]
+    },
+    "extractBIC invalid BICs returns only valid:false when the first 6 characters are not all letters": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.025916999999999746,
+        0.029917000000004634,
+        0.03233399999999875
+      ]
+    },
+    "extractBIC invalid BICs returns only valid:false when the country code is not in countrySpecs": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.022499999999993747,
+        0.022875000000006196,
+        0.02908299999999997
+      ]
+    },
+    "extractBIC invalid BICs leaves bankCode, countryCode, locationCode, branchCode and testBIC undefined on failure": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.048875000000002444,
+        0.058416000000001134,
+        0.052832999999999686
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 312,
+      "covered": 43,
+      "skipped": 0,
+      "pct": 13.78
+    },
+    "functions": {
+      "total": 33,
+      "covered": 4,
+      "skipped": 0,
+      "pct": 12.12
+    },
+    "statements": {
+      "total": 328,
+      "covered": 43,
+      "skipped": 0,
+      "pct": 13.1
+    },
+    "branches": {
+      "total": 229,
+      "covered": 10,
+      "skipped": 0,
+      "pct": 4.36
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

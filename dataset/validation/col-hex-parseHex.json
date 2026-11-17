@@ -1,0 +1,236 @@
+{
+  "functionId": "col-hex-parseHex",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "parseHex parses a 6-digit hex string without alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.8040829999999985,
+        0.7829160000000002,
+        0.7664589999999976
+      ]
+    },
+    "parseHex parses a 6-digit hex string case-insensitively": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.10816700000000168,
+        0.08937499999999687,
+        0.08620800000000628
+      ]
+    },
+    "parseHex parses an 8-digit hex string with alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.09200000000000585,
+        0.09295900000000046,
+        0.0921250000000029
+      ]
+    },
+    "parseHex parses a 3-digit hex string without alpha, duplicating each digit": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08758299999999508,
+        0.09037500000000165,
+        0.0903330000000011
+      ]
+    },
+    "parseHex parses a 4-digit hex string with alpha, duplicating each digit": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06441699999999884,
+        0.06737499999999841,
+        0.06262500000000415
+      ]
+    },
+    "parseHex rounds the alpha channel to 2 decimal places": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.1292089999999959,
+        0.13400000000000034,
+        0.13287499999999852
+      ]
+    },
+    "parseHex returns null for strings without a leading #": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.041540999999995165,
+        0.0433749999999975,
+        0.04683299999999946
+      ]
+    },
+    "parseHex returns null for invalid lengths": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06741699999999895,
+        0.07150000000000034,
+        0.06916599999999562
+      ]
+    },
+    "parseHex returns null for strings containing non-hex characters": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.054833999999999605,
+        0.055291000000003976,
+        0.058332999999997526
+      ]
+    },
+    "parseHex returns null for an empty string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04812499999999886,
+        0.04824999999999591,
+        0.04741700000000293
+      ]
+    },
+    "parseHex returns null for a string with only a hash": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.029790999999995904,
+        0.028666999999998666,
+        0.0277499999999975
+      ]
+    },
+    "parseHex returns null for strings with whitespace": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.047125000000001194,
+        0.04554199999999753,
+        0.041250000000005116
+      ]
+    },
+    "parseHex returns null for named colors or other formats": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02850000000000108,
+        0.0280830000000023,
+        0.026832999999996332
+      ]
+    },
+    "parseHex parses black and white correctly in all supported lengths": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.056833000000004574,
+        0.07795899999999989,
+        0.053708999999997786
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 17,
+      "covered": 12,
+      "skipped": 0,
+      "pct": 70.58
+    },
+    "functions": {
+      "total": 3,
+      "covered": 1,
+      "skipped": 0,
+      "pct": 33.33
+    },
+    "statements": {
+      "total": 18,
+      "covered": 13,
+      "skipped": 0,
+      "pct": 72.22
+    },
+    "branches": {
+      "total": 16,
+      "covered": 12,
+      "skipped": 0,
+      "pct": 75
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

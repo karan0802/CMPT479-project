@@ -1,0 +1,488 @@
+{
+  "functionId": "iban-core-isValidBBAN",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "isValidBBAN invalid input guards returns false when bban is undefined": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.5393329999999992,
+        0.5322079999999971,
+        0.5168749999999989
+      ]
+    },
+    "isValidBBAN invalid input guards returns false when countryCode is undefined": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05895799999999696,
+        0.059499999999999886,
+        0.05520899999999784
+      ]
+    },
+    "isValidBBAN invalid input guards returns false when both bban and countryCode are undefined": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04075000000000273,
+        0.03804200000000435,
+        0.03858299999999559
+      ]
+    },
+    "isValidBBAN invalid input guards returns false when bban is null": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05087499999999778,
+        0.046624999999998806,
+        0.04608299999999588
+      ]
+    },
+    "isValidBBAN invalid input guards returns false when countryCode is null": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.044417000000002815,
+        0.041541999999999746,
+        0.044874999999997556
+      ]
+    },
+    "isValidBBAN invalid input guards returns false for an unknown country code": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.036000000000001364,
+        0.03245799999999832,
+        0.03537500000000193
+      ]
+    },
+    "isValidBBAN invalid input guards returns false for an empty country code": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.037291999999993664,
+        0.03337499999999949,
+        0.03379199999999827
+      ]
+    },
+    "isValidBBAN NL (regex + length, no validation func) validates a correct NL BBAN": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.056542000000000314,
+        0.05679200000000151,
+        0.058041000000002896
+      ]
+    },
+    "isValidBBAN NL (regex + length, no validation func) rejects a NL BBAN with a digit where a letter is expected": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07312499999999744,
+        0.06512500000000188,
+        0.06816700000000253
+      ]
+    },
+    "isValidBBAN NL (regex + length, no validation func) rejects a NL BBAN with the wrong length": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.054249999999996135,
+        0.05158300000000082,
+        0.05183399999999949
+      ]
+    },
+    "isValidBBAN NL (regex + length, no validation func) rejects a NL BBAN with too many characters": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03466600000000142,
+        0.031542000000001735,
+        0.030207999999994684
+      ]
+    },
+    "isValidBBAN AT (plain digit regex) validates a correct AT BBAN": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03204099999999954,
+        0.03108299999999531,
+        0.03129200000000054
+      ]
+    },
+    "isValidBBAN AT (plain digit regex) rejects an AT BBAN containing a letter": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.041499999999999204,
+        0.033124999999998295,
+        0.03333399999999642
+      ]
+    },
+    "isValidBBAN AT (plain digit regex) rejects an AT BBAN with the wrong length": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.024917000000002076,
+        0.021917000000001963,
+        0.02204100000000153
+      ]
+    },
+    "isValidBBAN GB (letters followed by digits) validates a correct GB BBAN": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03462499999999835,
+        0.02687500000000398,
+        0.026541999999999177
+      ]
+    },
+    "isValidBBAN GB (letters followed by digits) rejects a GB BBAN with fewer than 4 leading letters": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.036999999999999034,
+        0.04291700000000276,
+        0.040833999999996706
+      ]
+    },
+    "isValidBBAN GB (letters followed by digits) rejects a GB BBAN with the wrong length": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02412500000000506,
+        0.0289590000000004,
+        0.021999999999998465
+      ]
+    },
+    "isValidBBAN CH and LI (digits followed by alphanumeric) validates a correct CH BBAN": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02645899999999557,
+        0.027040999999996984,
+        0.02575000000000216
+      ]
+    },
+    "isValidBBAN CH and LI (digits followed by alphanumeric) rejects a CH BBAN with letters in the first 5 characters": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.029000000000003467,
+        0.02658299999999514,
+        0.02679200000000037
+      ]
+    },
+    "isValidBBAN CH and LI (digits followed by alphanumeric) validates a correct LI BBAN": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.021459000000000117,
+        0.020750000000006708,
+        0.018166000000000793
+      ]
+    },
+    "isValidBBAN CH and LI (digits followed by alphanumeric) rejects a LI BBAN with the wrong length": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.019875000000006082,
+        0.019083000000009065,
+        0.01654199999999406
+      ]
+    },
+    "isValidBBAN DE (plain digit regex) validates a correct DE BBAN": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03304100000000432,
+        0.03145800000000065,
+        0.030583000000000027
+      ]
+    },
+    "isValidBBAN DE (plain digit regex) rejects a DE BBAN containing a letter": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02954199999999929,
+        0.029624999999995794,
+        0.029875000000004093
+      ]
+    },
+    "isValidBBAN BE (checksum validation) validates a BE BBAN with a correct checksum": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07345799999999514,
+        0.07399999999999807,
+        0.07337499999999864
+      ]
+    },
+    "isValidBBAN BE (checksum validation) rejects a BE BBAN with an incorrect checksum": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03404099999999488,
+        0.028917000000006965,
+        0.025833000000005768
+      ]
+    },
+    "isValidBBAN BE (checksum validation) rejects a BE BBAN that fails the format check before checksum is evaluated": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.017291000000000167,
+        0.019500000000007844,
+        0.01679099999999778
+      ]
+    },
+    "isValidBBAN BE (checksum validation) treats a checkingPart evenly divisible by 97 as requiring checksum 97": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02020800000000378,
+        0.017958000000007246,
+        0.017625000000002444
+      ]
+    },
+    "isValidBBAN BE (checksum validation) rejects the divisible-by-97 case when checksum is given as 00 instead of 97": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01954200000000128,
+        0.029291000000000622,
+        0.017499999999998295
+      ]
+    },
+    "isValidBBAN NO (checksum validation) validates a NO BBAN with a correct control digit": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03712499999999608,
+        0.041667000000003895,
+        0.03712499999999608
+      ]
+    },
+    "isValidBBAN NO (checksum validation) rejects a NO BBAN with an incorrect control digit": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.027333999999996195,
+        0.02720899999999915,
+        0.027124999999998067
+      ]
+    },
+    "isValidBBAN NO (checksum validation) rejects a NO BBAN with the wrong length": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.018667000000000655,
+        0.016208000000005995,
+        0.015959000000002277
+      ]
+    },
+    "isValidBBAN NO (checksum validation) rejects a NO BBAN containing a non-digit character": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.018541999999996506,
+        0.02245800000000031,
+        0.01733300000000071
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 312,
+      "covered": 52,
+      "skipped": 0,
+      "pct": 16.66
+    },
+    "functions": {
+      "total": 33,
+      "covered": 6,
+      "skipped": 0,
+      "pct": 18.18
+    },
+    "statements": {
+      "total": 328,
+      "covered": 54,
+      "skipped": 0,
+      "pct": 16.46
+    },
+    "branches": {
+      "total": 229,
+      "covered": 23,
+      "skipped": 0,
+      "pct": 10.04
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

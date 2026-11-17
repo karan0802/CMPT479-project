@@ -1,0 +1,264 @@
+{
+  "functionId": "iban-core-validateIBAN",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "validateIBAN missing input returns NoIBANProvided when no argument is given": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.7487079999999935,
+        0.7251249999999985,
+        0.7199170000000024
+      ]
+    },
+    "validateIBAN missing input returns NoIBANProvided when iban is undefined": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08341599999999971,
+        0.07416700000000276,
+        0.07029100000000454
+      ]
+    },
+    "validateIBAN missing input returns NoIBANProvided when iban is null": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06637499999999363,
+        0.06383399999999995,
+        0.06133400000000222
+      ]
+    },
+    "validateIBAN missing input returns NoIBANProvided when iban is an empty string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05608300000000099,
+        0.057166999999999746,
+        0.05466599999999744
+      ]
+    },
+    "validateIBAN unknown country returns only NoIBANCountry for an unsupported country code": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06450000000000244,
+        0.06320799999999593,
+        0.06029200000000401
+      ]
+    },
+    "validateIBAN unknown country treats country codes case-sensitively (lowercase does not match)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04895799999999895,
+        0.05075000000000074,
+        0.05170800000000497
+      ]
+    },
+    "validateIBAN wrong BBAN length reports WrongBBANLength together with the resulting format and checksum failures": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07266600000000523,
+        0.07337499999999864,
+        0.07262499999999505
+      ]
+    },
+    "validateIBAN wrong BBAN format reports WrongBBANFormat (and the forced WrongIBANChecksum) when the BBAN pattern does not match": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07087500000000091,
+        0.07824999999999704,
+        0.07054199999999611
+      ]
+    },
+    "validateIBAN wrong BBAN format is case-sensitive for alphabetic BBAN segments": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06495799999999718,
+        0.06212500000000176,
+        0.05941600000000591
+      ]
+    },
+    "validateIBAN checksum digits not numeric reports ChecksumNotNumber (and the forced WrongIBANChecksum) when the check digits are not digits": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.11716700000000202,
+        0.11708300000000094,
+        0.12387500000000529
+      ]
+    },
+    "validateIBAN valid IBANs validates a well-formed Dutch IBAN with no errors": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.0726669999999956,
+        0.07079099999999983,
+        0.0742090000000033
+      ]
+    },
+    "validateIBAN valid IBANs validates a well-formed German IBAN (digits-only BBAN) with no errors": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06537499999999596,
+        0.05108399999999591,
+        0.05604199999999793
+      ]
+    },
+    "validateIBAN valid IBANs validates a Swiss QR-IBAN as valid when QR-IBANs are allowed by default": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04695899999999398,
+        0.053249999999998465,
+        0.051625000000001364
+      ]
+    },
+    "validateIBAN valid IBANs validates a Swiss QR-IBAN as valid when QR-IBANs are explicitly allowed": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.057709000000002675,
+        0.048500000000004206,
+        0.061624999999999375
+      ]
+    },
+    "validateIBAN QR-IBAN restriction rejects a Swiss QR-IBAN when QR-IBANs are disallowed": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04712499999999409,
+        0.05458399999999841,
+        0.05308300000000088
+      ]
+    },
+    "validateIBAN QR-IBAN restriction does not flag a non-QR Swiss IBAN when QR-IBANs are disallowed": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.21924999999999528,
+        0.21529199999999804,
+        0.21720899999999688
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 312,
+      "covered": 77,
+      "skipped": 0,
+      "pct": 24.67
+    },
+    "functions": {
+      "total": 33,
+      "covered": 9,
+      "skipped": 0,
+      "pct": 27.27
+    },
+    "statements": {
+      "total": 328,
+      "covered": 77,
+      "skipped": 0,
+      "pct": 23.47
+    },
+    "branches": {
+      "total": 229,
+      "covered": 41,
+      "skipped": 0,
+      "pct": 17.9
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

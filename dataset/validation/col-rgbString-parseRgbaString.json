@@ -1,0 +1,502 @@
+{
+  "functionId": "col-rgbString-parseRgbaString",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "parseRgbaString comma syntax - integers parses a basic rgb() integer triplet with default alpha 1": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.8070000000000022,
+        0.9111249999999984,
+        0.8146249999999995
+      ]
+    },
+    "parseRgbaString comma syntax - integers parses rgba() with an explicit numeric alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.12374999999999403,
+        0.12766700000000242,
+        0.12416699999999992
+      ]
+    },
+    "parseRgbaString comma syntax - integers is case-insensitive for the function name": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07458400000000154,
+        0.10108400000000017,
+        0.08620900000000375
+      ]
+    },
+    "parseRgbaString comma syntax - integers tolerates extra/irregular whitespace around values and parens": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05695800000000162,
+        0.06212499999999466,
+        0.059417000000003384
+      ]
+    },
+    "parseRgbaString comma syntax - integers allows \"rgb(\" to accept a trailing alpha as well": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.045541000000000054,
+        0.062458999999996934,
+        0.04954200000000242
+      ]
+    },
+    "parseRgbaString comma syntax - integers parses decimal (non-integer) channel values": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.14458299999999724,
+        0.17783299999999969,
+        0.14466699999999832
+      ]
+    },
+    "parseRgbaString comma syntax - integers parses values with an explicit leading plus sign": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04649999999999466,
+        0.04895900000000353,
+        0.04766599999999954
+      ]
+    },
+    "parseRgbaString comma syntax - integers allows alpha to be a percentage while r/g/b are numbers": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06524999999999892,
+        0.08474999999999966,
+        0.06575000000000131
+      ]
+    },
+    "parseRgbaString comma syntax - percentages parses a percentage triplet, scaling to the 0-255 range": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08758300000000219,
+        0.10900000000000176,
+        0.09237499999999699
+      ]
+    },
+    "parseRgbaString comma syntax - percentages parses a percentage triplet with a numeric alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08766599999999869,
+        0.10558400000000034,
+        0.08570799999999679
+      ]
+    },
+    "parseRgbaString comma syntax - percentages parses a percentage triplet with a percentage alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05662500000000392,
+        0.06991699999999668,
+        0.052499999999994884
+      ]
+    },
+    "parseRgbaString comma syntax - percentages rejects mixing numbers and percentages among r/g/b": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.041791000000003464,
+        0.05495800000000628,
+        0.041625000000003354
+      ]
+    },
+    "parseRgbaString whitespace syntax parses a space-separated integer triplet with no alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.12449999999999761,
+        0.13562499999999744,
+        0.12654099999999602
+      ]
+    },
+    "parseRgbaString whitespace syntax parses a space-separated triplet with a slash-separated numeric alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07037500000000563,
+        0.07041699999999906,
+        0.07137499999999619
+      ]
+    },
+    "parseRgbaString whitespace syntax parses a space-separated percentage triplet with a percentage alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04287499999999511,
+        0.07900000000000063,
+        0.03949999999999676
+      ]
+    },
+    "parseRgbaString whitespace syntax tolerates extra whitespace around the slash and values": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.026584000000006824,
+        0.03925000000000267,
+        0.02345900000000256
+      ]
+    },
+    "parseRgbaString whitespace syntax rejects mixing numbers and percentages among r/g/b in whitespace syntax": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.019000000000005457,
+        0.02341700000000202,
+        0.020209000000001254
+      ]
+    },
+    "parseRgbaString whitespace syntax rejects mixing comma syntax with a slash alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.016332999999995934,
+        0.021666999999993664,
+        0.02008299999999963
+      ]
+    },
+    "parseRgbaString whitespace syntax rejects mixing whitespace syntax with a comma alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01854099999999903,
+        0.036583000000000254,
+        0.015709000000001083
+      ]
+    },
+    "parseRgbaString clamping of out-of-range values clamps negative channel values to 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.039791999999998495,
+        0.058915999999996416,
+        0.04120799999999747
+      ]
+    },
+    "parseRgbaString clamping of out-of-range values clamps channel values above 255 down to 255": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03741699999999781,
+        0.03912499999999852,
+        0.03612499999999841
+      ]
+    },
+    "parseRgbaString clamping of out-of-range values clamps alpha above 1 down to 1": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.025292000000000314,
+        0.03962500000000091,
+        0.022125000000002615
+      ]
+    },
+    "parseRgbaString clamping of out-of-range values clamps negative alpha up to 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.024792000000005032,
+        0.037750000000002615,
+        0.024374999999999147
+      ]
+    },
+    "parseRgbaString invalid input returns null for a completely unrelated string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01616700000000293,
+        0.01970800000000139,
+        0.015290999999997723
+      ]
+    },
+    "parseRgbaString invalid input returns null for an empty string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.015582999999999458,
+        0.01841699999999946,
+        0.017874999999996533
+      ]
+    },
+    "parseRgbaString invalid input returns null when a channel is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.015290999999997723,
+        0.02116699999999838,
+        0.015124999999997613
+      ]
+    },
+    "parseRgbaString invalid input returns null when there are too many components": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02054199999999895,
+        0.023207999999996787,
+        0.01608399999999932
+      ]
+    },
+    "parseRgbaString invalid input returns null for a hex color string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.017583999999999378,
+        0.03491699999999298,
+        0.017625000000002444
+      ]
+    },
+    "parseRgbaString invalid input returns null for a named color string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.021457999999995536,
+        0.021917000000001963,
+        0.019083999999999435
+      ]
+    },
+    "parseRgbaString invalid input returns null when missing the closing parenthesis": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.018667000000000655,
+        0.03391699999999531,
+        0.015791999999997586
+      ]
+    },
+    "parseRgbaString invalid input returns null when values are non-numeric": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01833299999999838,
+        0.02095899999999773,
+        0.015166999999998154
+      ]
+    },
+    "parseRgbaString invalid input returns null for an hsl() string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01899999999999835,
+        0.018582999999999572,
+        0.016208999999996365
+      ]
+    },
+    "parseRgbaString invalid input returns null when there is extraneous trailing text": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.015124999999997613,
+        0.03241700000000236,
+        0.015000000000000568
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 10,
+      "covered": 8,
+      "skipped": 0,
+      "pct": 80
+    },
+    "functions": {
+      "total": 2,
+      "covered": 1,
+      "skipped": 0,
+      "pct": 50
+    },
+    "statements": {
+      "total": 12,
+      "covered": 10,
+      "skipped": 0,
+      "pct": 83.33
+    },
+    "branches": {
+      "total": 20,
+      "covered": 18,
+      "skipped": 0,
+      "pct": 90
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

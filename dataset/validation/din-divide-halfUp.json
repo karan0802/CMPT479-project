@@ -1,0 +1,180 @@
+{
+  "functionId": "din-divide-halfUp",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "halfUp returns the exact quotient when the amount divides evenly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.5443329999999946,
+        0.5349160000000097,
+        0.5597919999999874
+      ]
+    },
+    "halfUp rounds down for positive quotients whose remainder is less than half the factor": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08341599999999971,
+        0.08720800000000395,
+        0.0886250000000075
+      ]
+    },
+    "halfUp rounds up for positive quotients whose remainder is greater than half the factor": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07704200000000583,
+        0.07583300000001714,
+        0.07783299999999826
+      ]
+    },
+    "halfUp rounds up for positive quotients that are exactly half": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06483399999999051,
+        0.0650839999999846,
+        0.06608399999998937
+      ]
+    },
+    "halfUp rounds up (towards positive infinity) for negative quotients that are exactly half": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07058299999999917,
+        0.06833399999999301,
+        0.0691669999999931
+      ]
+    },
+    "halfUp rounds negative quotients to the nearer integer when the remainder is less than half the factor": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.043708000000009406,
+        0.046999999999997044,
+        0.046582999999998265
+      ]
+    },
+    "halfUp rounds negative quotients to the nearer integer when the remainder is greater than half the factor": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.057332999999999856,
+        0.05458300000000804,
+        0.053541999999993095
+      ]
+    },
+    "halfUp handles a factor of 1 by returning the amount unchanged": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06183300000000713,
+        0.0619999999999834,
+        0.061666999999999916
+      ]
+    },
+    "halfUp handles large amounts correctly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05025000000000546,
+        0.05116699999999241,
+        0.05299999999999727
+      ]
+    },
+    "halfUp matches Math.round semantics across a broad range of amount/factor pairs": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        4.81520900000001,
+        4.782624999999996,
+        4.850666999999987
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 12,
+      "covered": 12,
+      "skipped": 0,
+      "pct": 100
+    },
+    "functions": {
+      "total": 1,
+      "covered": 1,
+      "skipped": 0,
+      "pct": 100
+    },
+    "statements": {
+      "total": 12,
+      "covered": 12,
+      "skipped": 0,
+      "pct": 100
+    },
+    "branches": {
+      "total": 7,
+      "covered": 7,
+      "skipped": 0,
+      "pct": 100
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

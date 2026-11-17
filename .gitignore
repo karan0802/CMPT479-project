@@ -8,5 +8,10 @@ coverage/
 .DS_Store
 dist/
 
+# Throwaway per-run configs written by scripts/run-step.ts, cleaned up after
+# each run; ignored too in case a run is interrupted before cleanup.
+.tsconfig.run.*.json
+.stryker.run.*.json
+
 # Internal planning document, not part of the project deliverable
 CMPT 479 – Stage 1 Plan Dataset Preparation.md

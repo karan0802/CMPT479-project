@@ -1,0 +1,201 @@
+{
+  "functionId": "din-api-toDecimal",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "toDecimal converts a positive amount into a decimal string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.5670829999999967,
+        0.5537080000000003,
+        0.5569160000000011
+      ]
+    },
+    "toDecimal accepts a currency whose base is a higher multiple of ten": {
+      "statuses": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "flaky": false,
+      "failureMessages": [
+        "AssertionError: expected '0.250' to be '2.50' // Object.is equality\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/packages/dinero.js/src/core/api/toDecimal.toDecimal.generated.test.ts:66:46\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:145:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:915:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1243:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1209:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1653:37\n    at Traces.$ (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/vitest/dist/chunks/traces.CCmnQaNT.js:142:27)\n    at trace (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/vitest/dist/chunks/test.B8ej_ZHS.js:239:21)\n    at runTest (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1653:12)",
+        "AssertionError: expected '0.250' to be '2.50' // Object.is equality\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/packages/dinero.js/src/core/api/toDecimal.toDecimal.generated.test.ts:66:46\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:145:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:915:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1243:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1209:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1653:37\n    at Traces.$ (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/vitest/dist/chunks/traces.CCmnQaNT.js:142:27)\n    at trace (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/vitest/dist/chunks/test.B8ej_ZHS.js:239:21)\n    at runTest (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1653:12)",
+        "AssertionError: expected '0.250' to be '2.50' // Object.is equality\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/packages/dinero.js/src/core/api/toDecimal.toDecimal.generated.test.ts:66:46\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:145:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:915:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1243:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1209:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1653:37\n    at Traces.$ (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/vitest/dist/chunks/traces.CCmnQaNT.js:142:27)\n    at trace (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/vitest/dist/chunks/test.B8ej_ZHS.js:239:21)\n    at runTest (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1653:12)"
+      ],
+      "durations": [
+        2.0717500000000086,
+        2.138542000000001,
+        2.1003749999999854
+      ]
+    },
+    "toDecimal omits the fractional part and separator when scale is zero": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06883300000001213,
+        0.06658400000000597,
+        0.07229100000000699
+      ]
+    },
+    "toDecimal pads the fractional part with leading zeros to match the scale": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.058915999999982205,
+        0.05833300000000463,
+        0.05916700000000219
+      ]
+    },
+    "toDecimal formats a negative amount whose whole part is non-zero": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.054000000000002046,
+        0.05391700000001265,
+        0.05829200000002288
+      ]
+    },
+    "toDecimal adds a leading negative sign when the whole part is a negative zero": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.037750000000016826,
+        0.03991600000000517,
+        0.04050000000000864
+      ]
+    },
+    "toDecimal does not add a negative sign for a small positive amount": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03633300000001327,
+        0.039499999999975444,
+        0.038375000000002046
+      ]
+    },
+    "toDecimal formats a zero amount correctly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03674999999998363,
+        0.03716700000001083,
+        0.03695899999999597
+      ]
+    },
+    "toDecimal passes the computed value and currency to a provided transformer and returns its result": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.051792000000006055,
+        0.054291000000006306,
+        0.052667000000013786
+      ]
+    },
+    "toDecimal returns the raw decimal value when no transformer is provided": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06283300000001191,
+        0.06312500000001364,
+        0.06308399999997505
+      ]
+    },
+    "toDecimal throws when the currency has a compound (array) base": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.24991600000001313,
+        0.23641699999998878,
+        0.24083399999997823
+      ]
+    },
+    "toDecimal throws when the currency base is not a multiple of ten": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.046041999999999916,
+        0.046750000000002956,
+        0.047083999999983916
+      ]
+    },
+    "toDecimal throws for another non-decimal base as well": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03737499999999727,
+        0.038167000000015605,
+        0.037749999999988404
+      ]
+    }
+  },
+  "coverage": null,
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

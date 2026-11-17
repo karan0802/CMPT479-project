@@ -1,0 +1,264 @@
+{
+  "functionId": "din-allocate-safeAllocate",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "safeAllocate successful allocation with plain-number ratios splits an amount evenly, assigning the remainder to the first ratio": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.8165419999999983,
+        0.835250000000002,
+        0.8221249999999998
+      ]
+    },
+    "safeAllocate successful allocation with plain-number ratios splits an amount proportionally across three ratios with no remainder": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.1229579999999828,
+        0.12262499999999932,
+        0.11983299999999986
+      ]
+    },
+    "safeAllocate successful allocation with plain-number ratios allocates everything to a single ratio": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06320799999997462,
+        0.0589999999999975,
+        0.05787499999999568
+      ]
+    },
+    "safeAllocate successful allocation with plain-number ratios returns one Dinero object per ratio": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.3072080000000028,
+        0.3045410000000004,
+        0.29170899999999733
+      ]
+    },
+    "safeAllocate successful allocation with plain-number ratios preserves the original currency on every resulting share": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07050000000000978,
+        0.06999999999999318,
+        0.06987499999999613
+      ]
+    },
+    "safeAllocate successful allocation with plain-number ratios allows a zero ratio alongside a positive one, giving it nothing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06991700000000378,
+        0.07124999999999204,
+        0.07033400000000256
+      ]
+    },
+    "safeAllocate successful allocation with plain-number ratios does not mutate the original Dinero object data": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04545899999999392,
+        0.05025000000000546,
+        0.045708000000018956
+      ]
+    },
+    "safeAllocate ratio normalization across scales normalizes same-scale object ratios and raises the result scale accordingly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06779199999999719,
+        0.06924999999998249,
+        0.06708299999999667
+      ]
+    },
+    "safeAllocate ratio normalization across scales normalizes mixed plain-number and scaled-object ratios to the highest scale": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.0761669999999981,
+        0.07629099999999767,
+        0.07499999999998863
+      ]
+    },
+    "safeAllocate ratio normalization across scales scales proportional object ratios that all share a non-zero scale": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07662500000000705,
+        0.07654199999998923,
+        0.0759999999999934
+      ]
+    },
+    "safeAllocate invalid ratios throws when given an empty ratios array": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.23824999999999363,
+        0.2529169999999965,
+        0.24187499999999318
+      ]
+    },
+    "safeAllocate invalid ratios throws when a plain-number ratio is negative": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04912500000000364,
+        0.0498749999999859,
+        0.0488330000000019
+      ]
+    },
+    "safeAllocate invalid ratios throws when a scaled-object ratio is negative": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04783299999999713,
+        0.05108300000000554,
+        0.05433299999998553
+      ]
+    },
+    "safeAllocate invalid ratios throws when every ratio is zero": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03750000000002274,
+        0.036166999999977634,
+        0.03658300000000736
+      ]
+    },
+    "safeAllocate invalid ratios throws when the only ratio provided is zero": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03520800000001145,
+        0.032417000000009466,
+        0.03258300000001668
+      ]
+    },
+    "safeAllocate invalid ratios throws when ratios mix a negative value with zeros": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03300000000001546,
+        0.03274999999999295,
+        0.03245900000001711
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 32,
+      "covered": 32,
+      "skipped": 0,
+      "pct": 100
+    },
+    "functions": {
+      "total": 11,
+      "covered": 11,
+      "skipped": 0,
+      "pct": 100
+    },
+    "statements": {
+      "total": 33,
+      "covered": 33,
+      "skipped": 0,
+      "pct": 100
+    },
+    "branches": {
+      "total": 7,
+      "covered": 7,
+      "skipped": 0,
+      "pct": 100
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "functionId": "iban-core-isQRIBAN",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "isQRIBAN returns true for a valid Swiss QR-IBAN": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.5514170000000007,
+        0.542625000000001,
+        0.5337919999999983
+      ]
+    },
+    "isQRIBAN returns false for a regular (non-QR) Dutch IBAN": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.054791999999999064,
+        0.0593330000000023,
+        0.05958400000000097
+      ]
+    },
+    "isQRIBAN returns false for a regular (non-QR) Swiss IBAN": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.061665999999995336,
+        0.06362500000000182,
+        0.06341699999999406
+      ]
+    },
+    "isQRIBAN returns true for a Liechtenstein IBAN with a QR IID": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04520800000000236,
+        0.050499999999999545,
+        0.04262500000000102
+      ]
+    },
+    "isQRIBAN returns false for a Liechtenstein IBAN with a non-QR IID": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.044041,
+        0.04574999999999818,
+        0.04537499999999994
+      ]
+    },
+    "isQRIBAN returns false for a country not in the QR-IBAN list, even with digits in the QR range": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03608299999999787,
+        0.04937500000000483,
+        0.03395900000000296
+      ]
+    },
+    "isQRIBAN returns true at the lower boundary of the QR IID range (30000)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04470900000000455,
+        0.038666999999996676,
+        0.0558329999999998
+      ]
+    },
+    "isQRIBAN returns true at the upper boundary of the QR IID range (31999)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03674999999999784,
+        0.0350830000000002,
+        0.035042000000004236
+      ]
+    },
+    "isQRIBAN returns false just below the QR IID range (29999)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04683299999999946,
+        0.047125000000001194,
+        0.04808299999999832
+      ]
+    },
+    "isQRIBAN returns false just above the QR IID range (32000)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05841699999999861,
+        0.05449999999999733,
+        0.05058300000000315
+      ]
+    },
+    "isQRIBAN returns false when the IID segment contains non-digit characters": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.041625000000003354,
+        0.03237500000000182,
+        0.031042000000006453
+      ]
+    },
+    "isQRIBAN returns false for an empty string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02687500000000398,
+        0.02575000000000216,
+        0.02479100000000045
+      ]
+    },
+    "isQRIBAN returns false for null input": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.022040999999994426,
+        0.021459000000000117,
+        0.020792000000000144
+      ]
+    },
+    "isQRIBAN returns false for undefined input": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.020666999999995994,
+        0.02145800000000264,
+        0.019249999999999545
+      ]
+    },
+    "isQRIBAN returns false when the IBAN is too short to contain an IID segment": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.021917000000001963,
+        0.02187500000000142,
+        0.019958000000002585
+      ]
+    },
+    "isQRIBAN is case-sensitive about the country code and rejects a lowercase match": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02125000000000199,
+        0.027416999999999803,
+        0.02233299999999616
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 312,
+      "covered": 33,
+      "skipped": 0,
+      "pct": 10.57
+    },
+    "functions": {
+      "total": 33,
+      "covered": 3,
+      "skipped": 0,
+      "pct": 9.09
+    },
+    "statements": {
+      "total": 328,
+      "covered": 35,
+      "skipped": 0,
+      "pct": 10.67
+    },
+    "branches": {
+      "total": 229,
+      "covered": 6,
+      "skipped": 0,
+      "pct": 2.62
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

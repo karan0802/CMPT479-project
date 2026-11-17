@@ -1,0 +1,208 @@
+{
+  "functionId": "iban-core-extractIBAN",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "extractIBAN extracts a valid NL IBAN given with spaces (documented example)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.7804999999999964,
+        0.7838749999999948,
+        0.7931659999999994
+      ]
+    },
+    "extractIBAN extracts a valid NL IBAN given lowercase and without separators": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.1026250000000033,
+        0.11783399999999489,
+        0.10120799999999974
+      ]
+    },
+    "extractIBAN extracts a valid NL IBAN given with dashes as separators": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06550000000000011,
+        0.07145899999999727,
+        0.06791700000000134
+      ]
+    },
+    "extractIBAN extracts a valid CH IBAN, populating only the fields CH defines": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.10879200000000111,
+        0.09850000000000136,
+        0.10662500000000108
+      ]
+    },
+    "extractIBAN extracts a valid GB IBAN, including bank and branch identifiers": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08495800000000031,
+        0.06824999999999903,
+        0.07562499999999517
+      ]
+    },
+    "extractIBAN marks an IBAN with an incorrect checksum as invalid and leaves derived fields unset": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07687500000000114,
+        0.07579199999999986,
+        0.08691699999999969
+      ]
+    },
+    "extractIBAN marks an IBAN with an unknown country code as invalid": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.0475410000000025,
+        0.04408300000000054,
+        0.04595799999999883
+      ]
+    },
+    "extractIBAN marks an IBAN with the wrong length for its country as invalid": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.040833999999996706,
+        0.04045800000000099,
+        0.04329100000000352
+      ]
+    },
+    "extractIBAN marks an IBAN whose BBAN fails the country format regexp as invalid": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08945800000000048,
+        0.09508299999999537,
+        0.09066700000000338
+      ]
+    },
+    "extractIBAN normalizes non-IBAN input (uppercase, separators stripped) but reports it invalid": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.057250000000003354,
+        0.06120799999999349,
+        0.05724999999999625
+      ]
+    },
+    "extractIBAN handles an empty string as invalid without throwing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.036583000000000254,
+        0.035916999999997756,
+        0.038375000000002046
+      ]
+    },
+    "extractIBAN is deterministic across repeated calls with the same input": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05666699999999736,
+        0.0500419999999977,
+        0.04941599999999369
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 312,
+      "covered": 85,
+      "skipped": 0,
+      "pct": 27.24
+    },
+    "functions": {
+      "total": 33,
+      "covered": 11,
+      "skipped": 0,
+      "pct": 33.33
+    },
+    "statements": {
+      "total": 328,
+      "covered": 85,
+      "skipped": 0,
+      "pct": 25.91
+    },
+    "branches": {
+      "total": 229,
+      "covered": 47,
+      "skipped": 0,
+      "pct": 20.52
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

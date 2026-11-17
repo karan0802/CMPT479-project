@@ -1,0 +1,586 @@
+{
+  "functionId": "col-src-parse",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "parse invalid / unsupported inputs returns [null, undefined] for null": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.6699169999999981,
+        0.6735000000000042,
+        0.6906659999999931
+      ]
+    },
+    "parse invalid / unsupported inputs returns [null, undefined] for undefined": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06262499999999704,
+        0.05995900000000631,
+        0.06283399999999517
+      ]
+    },
+    "parse invalid / unsupported inputs returns [null, undefined] for a number": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05220799999999315,
+        0.04641700000000526,
+        0.044291999999998666
+      ]
+    },
+    "parse invalid / unsupported inputs returns [null, undefined] for a boolean": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.051208000000002585,
+        0.0488330000000019,
+        0.04912500000000364
+      ]
+    },
+    "parse invalid / unsupported inputs returns [null, undefined] for an empty string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.4165830000000028,
+        0.4168330000000111,
+        0.42104100000000244
+      ]
+    },
+    "parse invalid / unsupported inputs returns [null, undefined] for a whitespace-only string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.21116599999999153,
+        0.21283300000000338,
+        0.21091699999999491
+      ]
+    },
+    "parse invalid / unsupported inputs returns [null, undefined] for a garbage string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04383300000000645,
+        0.04483399999999449,
+        0.04383299999999224
+      ]
+    },
+    "parse invalid / unsupported inputs returns [null, undefined] for an empty object": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07299999999999329,
+        0.07512499999999989,
+        0.07612500000000466
+      ]
+    },
+    "parse invalid / unsupported inputs returns [null, undefined] for an array": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05908300000000111,
+        0.05883399999999028,
+        0.05220799999999315
+      ]
+    },
+    "parse invalid / unsupported inputs returns [null, undefined] for an object missing required rgb/hsl/hsv keys": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.058166999999997415,
+        0.06270899999999813,
+        0.057709000000002675
+      ]
+    },
+    "parse invalid / unsupported inputs returns [null, undefined] for an incomplete rgb object": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.037709000000006654,
+        0.04287500000000932,
+        0.038207999999997355
+      ]
+    },
+    "parse invalid / unsupported inputs returns [null, undefined] for an invalid hex string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.029291999999998097,
+        0.029207999999997014,
+        0.028709000000006313
+      ]
+    },
+    "parse invalid / unsupported inputs returns [null, undefined] for a hex string with wrong length": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.024083000000004517,
+        0.024665999999996302,
+        0.0241670000000056
+      ]
+    },
+    "parse hex strings parses a 6-digit hex color": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.047874999999990564,
+        0.0459160000000054,
+        0.04608400000000756
+      ]
+    },
+    "parse hex strings is case-insensitive": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03362500000000068,
+        0.03254200000000651,
+        0.0402909999999963
+      ]
+    },
+    "parse hex strings parses a 3-digit shorthand hex color": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.026499999999998636,
+        0.026208999999994376,
+        0.026707999999999288
+      ]
+    },
+    "parse hex strings parses an 8-digit hex color with alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04554200000001174,
+        0.046165999999999485,
+        0.04870800000000486
+      ]
+    },
+    "parse hex strings parses a 4-digit shorthand hex color with alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.022374999999996703,
+        0.02224999999999966,
+        0.02245800000000031
+      ]
+    },
+    "parse hex strings trims surrounding whitespace before parsing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.023082999999999743,
+        0.023707999999999174,
+        0.023708000000013385
+      ]
+    },
+    "parse hex strings parses black and white": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04312500000000341,
+        0.042709000000002106,
+        0.03941700000000026
+      ]
+    },
+    "parse rgb strings parses an rgb() string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05924999999999159,
+        0.04741599999999835,
+        0.06195900000000165
+      ]
+    },
+    "parse rgb strings parses an rgba() string with alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03175000000000239,
+        0.03379200000000537,
+        0.030749999999997613
+      ]
+    },
+    "parse rgb strings parses rgb strings for green and blue": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03566700000000367,
+        0.035291999999998325,
+        0.03433300000000372
+      ]
+    },
+    "parse hsl strings parses an hsl() string for pure red": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08362499999999784,
+        0.08850000000001046,
+        0.0882919999999956
+      ]
+    },
+    "parse hsl strings parses an hsla() string with alpha for pure green": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.028249999999999886,
+        0.028082999999995195,
+        0.02820799999999224
+      ]
+    },
+    "parse hsl strings parses pure blue": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02374999999999261,
+        0.02483399999999847,
+        0.023874999999989654
+      ]
+    },
+    "parse hsl strings parses white and black via lightness": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03566700000000367,
+        0.03529100000000085,
+        0.03524999999999068
+      ]
+    },
+    "parse rgb objects parses a complete rgba object": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02345900000000256,
+        0.023249999999990223,
+        0.02312500000000739
+      ]
+    },
+    "parse rgb objects defaults alpha to 1 when omitted": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.22383399999999654,
+        0.22683400000001086,
+        0.2238750000000067
+      ]
+    },
+    "parse hsl objects parses a complete hsla object for pure red": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02820800000000645,
+        0.027416000000002327,
+        0.027667000000008102
+      ]
+    },
+    "parse hsl objects parses a complete hsla object for pure green with alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.024957999999998037,
+        0.024999999999991473,
+        0.025000000000005684
+      ]
+    },
+    "parse hsv objects parses a complete hsva object for pure red": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03579200000000071,
+        0.039249999999995566,
+        0.03608300000000497
+      ]
+    },
+    "parse hsv objects parses a complete hsva object for pure blue with alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02966699999998923,
+        0.02908299999999997,
+        0.02975000000000705
+      ]
+    },
+    "parse parser precedence for strings tries hex before rgb and hsl string parsers": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02533300000000338,
+        0.024958999999995513,
+        0.025291000000009944
+      ]
+    },
+    "getFormat returns \"hex\" for a hex string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.026542000000006283,
+        0.026499999999998636,
+        0.0264580000000052
+      ]
+    },
+    "getFormat returns \"rgb\" for an rgb string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.019249999999999545,
+        0.019916999999992413,
+        0.0191250000000025
+      ]
+    },
+    "getFormat returns \"hsl\" for an hsl object": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.028500000000008185,
+        0.02687500000000398,
+        0.02599999999999625
+      ]
+    },
+    "getFormat returns \"hsv\" for an hsv object": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.019499999999993634,
+        0.019458000000000197,
+        0.02154199999999662
+      ]
+    },
+    "getFormat returns undefined for invalid input": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.027625000000000455,
+        0.02804100000000176,
+        0.02883299999999167
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 13,
+      "covered": 13,
+      "skipped": 0,
+      "pct": 100
+    },
+    "functions": {
+      "total": 3,
+      "covered": 3,
+      "skipped": 0,
+      "pct": 100
+    },
+    "statements": {
+      "total": 16,
+      "covered": 16,
+      "skipped": 0,
+      "pct": 100
+    },
+    "branches": {
+      "total": 8,
+      "covered": 8,
+      "skipped": 0,
+      "pct": 100
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

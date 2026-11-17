@@ -1,0 +1,341 @@
+{
+  "functionId": "col-hwb-parseHwba",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "parseHwba returns null when hue is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.5543750000000074,
+        0.519999999999996,
+        0.5349590000000006
+      ]
+    },
+    "parseHwba returns null when whiteness is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06058299999999406,
+        0.06104100000000301,
+        0.070541999999989
+      ]
+    },
+    "parseHwba returns null when blackness is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04737500000000239,
+        0.0519999999999996,
+        0.04795800000000838
+      ]
+    },
+    "parseHwba returns null when hue is explicitly null": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08087500000000603,
+        0.04758300000000304,
+        0.048333000000013726
+      ]
+    },
+    "parseHwba returns null when whiteness is explicitly undefined": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04520899999999983,
+        0.04529099999999886,
+        0.04445900000000336
+      ]
+    },
+    "parseHwba treats a hue/whiteness/blackness of 0 as present (not missing)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.13299999999999557,
+        0.1114159999999984,
+        0.12787500000000307
+      ]
+    },
+    "parseHwba converts pure red (h=0, w=0, b=0) with default alpha": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.22966700000000628,
+        0.2252499999999955,
+        0.2378750000000025
+      ]
+    },
+    "parseHwba converts pure green (h=120, w=0, b=0)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07970899999999403,
+        0.0605419999999981,
+        0.05924999999999159
+      ]
+    },
+    "parseHwba converts pure blue (h=240, w=0, b=0)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.059332999999995195,
+        0.05633400000000677,
+        0.06254200000000765
+      ]
+    },
+    "parseHwba converts pure yellow (h=60, w=0, b=0)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07029099999999744,
+        0.06329199999999702,
+        0.07045800000000213
+      ]
+    },
+    "parseHwba converts orange (h=40, w=0, b=0) with an exact fractional result": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05741700000000094,
+        0.04641600000000068,
+        0.04949999999999477
+      ]
+    },
+    "parseHwba produces white when whiteness is 100, regardless of hue": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03891700000001208,
+        0.03800000000000381,
+        0.038334000000006085
+      ]
+    },
+    "parseHwba produces black when blackness is 100, regardless of hue": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05349999999999966,
+        0.03291600000000017,
+        0.0327920000000006
+      ]
+    },
+    "parseHwba produces mid gray when whiteness and blackness both equal 50": {
+      "statuses": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "flaky": false,
+      "failureMessages": [
+        "AssertionError: expected { r: 127.5, g: 127.5, b: 127.5, a: 1 } to deeply equal { r: 128, g: 128, b: 128, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hwb.parseHwba.generated.test.ts:59:47\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 127.5, b: 127.5, a: 1 } to deeply equal { r: 128, g: 128, b: 128, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hwb.parseHwba.generated.test.ts:59:47\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 127.5, b: 127.5, a: 1 } to deeply equal { r: 128, g: 128, b: 128, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hwb.parseHwba.generated.test.ts:59:47\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64"
+      ],
+      "durations": [
+        2.9754999999999967,
+        2.7063330000000008,
+        2.8294170000000065
+      ]
+    },
+    "parseHwba defaults alpha to 1 when alpha is omitted": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.12462499999999466,
+        0.09650000000000603,
+        0.1016660000000087
+      ]
+    },
+    "parseHwba respects an explicit alpha value within range": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08687500000000625,
+        0.05349999999999966,
+        0.05691699999999855
+      ]
+    },
+    "parseHwba clamps alpha above 1 down to 1": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04233299999999929,
+        0.03741700000000492,
+        0.037291999999993664
+      ]
+    },
+    "parseHwba clamps alpha below 0 up to 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05041599999999846,
+        0.028541000000004146,
+        0.02945900000000279
+      ]
+    },
+    "parseHwba clamps whiteness above 100 and blackness below 0, combined with alpha clamping": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02945900000000279,
+        0.02691599999999994,
+        0.024583000000006905
+      ]
+    },
+    "parseHwba wraps a hue greater than 360 via clampHue (400 behaves like 40)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.045457999999996446,
+        0.02245800000000031,
+        0.022959000000000174
+      ]
+    },
+    "parseHwba wraps a negative hue via clampHue (-320 behaves like 40)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02512500000000273,
+        0.02358300000000213,
+        0.02312499999999318
+      ]
+    },
+    "parseHwba coerces numeric-looking string inputs to numbers": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.030666999999994005,
+        0.03020800000000179,
+        0.031167000000010603
+      ]
+    },
+    "parseHwba coerces a numeric-looking string alpha to a number": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02845800000000054,
+        0.026291999999997984,
+        0.026666999999989116
+      ]
+    }
+  },
+  "coverage": null,
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

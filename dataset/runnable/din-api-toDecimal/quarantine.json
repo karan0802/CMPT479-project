@@ -1,0 +1,8 @@
+[
+  {
+    "testId": "din-api-toDecimal:T02",
+    "fullName": "toDecimal accepts a currency whose base is a higher multiple of ten",
+    "reason": "failed",
+    "failureMessage": "AssertionError: expected '0.250' to be '2.50' // Object.is equality\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/packages/dinero.js/src/core/api/toDecimal.toDecimal.generated.test.ts:66:46\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:145:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:915:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1243:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1209:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1653:37\n    at Traces.$ (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/vitest/dist/chunks/traces.CCmnQaNT.js:142:27)\n    at trace (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/vitest/dist/chunks/test.B8ej_ZHS.js:239:21)\n    at runTest (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/upstream/dinero.js/node_modules/@vitest/runner/dist/index.js:1653:12)"
+  }
+]

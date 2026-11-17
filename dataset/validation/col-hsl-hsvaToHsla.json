@@ -1,0 +1,250 @@
+{
+  "functionId": "col-hsl-hsvaToHsla",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "hsvaToHsla converts black (s=0, v=0) to l=0, s=0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.6652079999999998,
+        0.6574999999999989,
+        0.6557920000000053
+      ]
+    },
+    "hsvaToHsla converts white (s=0, v=100) to l=100, s=0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06933400000000489,
+        0.08300000000000551,
+        0.07016699999999787
+      ]
+    },
+    "hsvaToHsla converts a mid-gray (s=0, v=50) to l=50, s=0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08824999999999505,
+        0.1004999999999967,
+        0.09291699999999992
+      ]
+    },
+    "hsvaToHsla converts fully saturated, full value color (s=100, v=100) to s=100, l=50": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08845800000000281,
+        0.09558400000000233,
+        0.08741700000000208
+      ]
+    },
+    "hsvaToHsla converts fully saturated green at half value (s=100, v=50) to s=100, l=25": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06570800000000077,
+        0.06475000000000364,
+        0.06854099999999619
+      ]
+    },
+    "hsvaToHsla uses the hh <= 100 branch for a moderately bright, low-saturation color": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04475000000000051,
+        0.044958000000001164,
+        0.04554199999999753
+      ]
+    },
+    "hsvaToHsla uses the hh > 100 branch (denominator becomes 200 - hh)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04399999999999693,
+        0.044832999999997014,
+        0.044041
+      ]
+    },
+    "hsvaToHsla matches a precise non-round example in the hh > 100 branch": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.059333999999999776,
+        0.06008399999999625,
+        0.057416999999993834
+      ]
+    },
+    "hsvaToHsla returns s=0 when hh equals 0 (v=0 regardless of s)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06137499999999818,
+        0.07245800000000457,
+        0.06174999999999642
+      ]
+    },
+    "hsvaToHsla returns s=0 when hh equals 200 exactly (s=0, v=100)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05808299999999633,
+        0.06374999999999886,
+        0.06570800000000077
+      ]
+    },
+    "hsvaToHsla returns s=0 when hh exceeds 200 (s negative, which is out of normal range)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04350000000000165,
+        0.039749999999997954,
+        0.03920900000000671
+      ]
+    },
+    "hsvaToHsla passes the hue through unchanged, including out-of-range values": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03345799999999599,
+        0.03383399999999881,
+        0.03283299999999656
+      ]
+    },
+    "hsvaToHsla passes the alpha channel through unchanged": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02883399999999625,
+        0.03204199999999702,
+        0.029292000000005203
+      ]
+    },
+    "hsvaToHsla does not clamp s or v itself, leaving that responsibility to clampHsla": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02666699999999622,
+        0.02804100000000176,
+        0.026499999999998636
+      ]
+    },
+    "hsvaToHsla is a pure function that does not mutate its input": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03904099999999744,
+        0.045417000000000485,
+        0.03920800000000213
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 16,
+      "covered": 9,
+      "skipped": 0,
+      "pct": 56.25
+    },
+    "functions": {
+      "total": 7,
+      "covered": 1,
+      "skipped": 0,
+      "pct": 14.28
+    },
+    "statements": {
+      "total": 19,
+      "covered": 9,
+      "skipped": 0,
+      "pct": 47.36
+    },
+    "branches": {
+      "total": 16,
+      "covered": 6,
+      "skipped": 0,
+      "pct": 37.5
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

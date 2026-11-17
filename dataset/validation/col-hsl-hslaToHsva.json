@@ -1,0 +1,222 @@
+{
+  "functionId": "col-hsl-hslaToHsva",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "hslaToHsva converts black (l = 0) regardless of saturation": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.730708000000007,
+        0.7249999999999943,
+        0.7261249999999961
+      ]
+    },
+    "hslaToHsva converts white (l = 100) regardless of saturation": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.0725840000000062,
+        0.06995799999999974,
+        0.08424999999999727
+      ]
+    },
+    "hslaToHsva converts a fully desaturated mid gray (s = 0, l = 50)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.0659169999999989,
+        0.06312499999999943,
+        0.06779199999999719
+      ]
+    },
+    "hslaToHsva converts pure red (h = 0, s = 100, l = 50) to full saturation/value": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05304200000000492,
+        0.06199999999999761,
+        0.0594159999999988
+      ]
+    },
+    "hslaToHsva converts a fully saturated dark color (l < 50) to s = 100": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.057749999999998636,
+        0.06399999999999295,
+        0.05879099999999937
+      ]
+    },
+    "hslaToHsva computes exact values for a light color (l > 50)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04312500000000341,
+        0.053207999999997924,
+        0.04745900000000347
+      ]
+    },
+    "hslaToHsva computes exact values for another light color (l > 50)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.038624999999996135,
+        0.04537500000000705,
+        0.11012499999999648
+      ]
+    },
+    "hslaToHsva handles the boundary case l = 50 using the (100 - l) branch": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.14266700000000299,
+        0.13741699999999923,
+        0.16554200000000208
+      ]
+    },
+    "hslaToHsva passes through an out-of-range (negative) hue unchanged": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07287500000001046,
+        0.07591700000000401,
+        0.07808299999999235
+      ]
+    },
+    "hslaToHsva passes through an out-of-range (> 360) hue unchanged": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07254199999999855,
+        0.07545899999999506,
+        0.07670799999999645
+      ]
+    },
+    "hslaToHsva passes through the alpha value unchanged": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.038374999999987836,
+        0.044458999999989146,
+        0.04520800000000236
+      ]
+    },
+    "hslaToHsva does not mutate the input object": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04537499999999284,
+        0.046750000000002956,
+        0.06279199999998752
+      ]
+    },
+    "hslaToHsva returns s = 0 whenever the scaled saturation is 0, even with nonzero hue/lightness": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03079199999999105,
+        0.03987500000000921,
+        0.03770799999999497
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 16,
+      "covered": 9,
+      "skipped": 0,
+      "pct": 56.25
+    },
+    "functions": {
+      "total": 7,
+      "covered": 1,
+      "skipped": 0,
+      "pct": 14.28
+    },
+    "statements": {
+      "total": 19,
+      "covered": 9,
+      "skipped": 0,
+      "pct": 47.36
+    },
+    "branches": {
+      "total": 16,
+      "covered": 4,
+      "skipped": 0,
+      "pct": 25
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

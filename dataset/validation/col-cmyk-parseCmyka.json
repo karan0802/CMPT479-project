@@ -1,0 +1,418 @@
+{
+  "functionId": "col-cmyk-parseCmyka",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "parseCmyka missing required channels returns null when c is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.5390839999999955,
+        0.5124579999999952,
+        0.5454170000000005
+      ]
+    },
+    "parseCmyka missing required channels returns null when m is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05687499999999801,
+        0.05479200000000617,
+        0.056542000000000314
+      ]
+    },
+    "parseCmyka missing required channels returns null when y is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03829199999999844,
+        0.037750000000002615,
+        0.04537499999999994
+      ]
+    },
+    "parseCmyka missing required channels returns null when k is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05216700000000429,
+        0.04700000000000415,
+        0.0472080000000048
+      ]
+    },
+    "parseCmyka missing required channels returns null for an empty object": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.049292000000001224,
+        0.04449999999999932,
+        0.04362499999999869
+      ]
+    },
+    "parseCmyka missing required channels returns null when all required channels are explicitly undefined": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.039208999999999605,
+        0.036583000000000254,
+        0.0382499999999979
+      ]
+    },
+    "parseCmyka missing required channels treats zero values for c, m, y, k as present (not missing)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.09945899999999597,
+        0.08995900000000034,
+        0.09254200000000168
+      ]
+    },
+    "parseCmyka basic color conversions converts c:0 m:0 y:0 k:0 to white with default alpha of 1": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.2145840000000021,
+        0.21495800000000287,
+        0.212333000000001
+      ]
+    },
+    "parseCmyka basic color conversions converts k:100 to black regardless of other channels being 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07337499999999864,
+        0.06470900000000057,
+        0.06895899999999955
+      ]
+    },
+    "parseCmyka basic color conversions converts pure cyan (c:100) correctly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06824999999999903,
+        0.06383399999999995,
+        0.06566600000000022
+      ]
+    },
+    "parseCmyka basic color conversions converts pure magenta (m:100) correctly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05349999999999966,
+        0.04258300000000048,
+        0.04783299999999713
+      ]
+    },
+    "parseCmyka basic color conversions converts pure yellow (y:100) correctly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04316700000000395,
+        0.03999999999999915,
+        0.03966700000000145
+      ]
+    },
+    "parseCmyka basic color conversions converts a general cmyk combination correctly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.033292000000002986,
+        0.031957999999995934,
+        0.03054100000000659
+      ]
+    },
+    "parseCmyka alpha handling defaults alpha to 1 when omitted": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.058709000000000344,
+        0.05841699999999861,
+        0.055582999999998606
+      ]
+    },
+    "parseCmyka alpha handling uses the provided alpha value": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04291699999999565,
+        0.034834000000003584,
+        0.03520799999999724
+      ]
+    },
+    "parseCmyka alpha handling clamps alpha above 1 down to 1": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.045457999999996446,
+        0.04137500000000216,
+        0.04100000000000392
+      ]
+    },
+    "parseCmyka alpha handling clamps negative alpha up to 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03183299999999889,
+        0.03304200000000179,
+        0.03579200000000071
+      ]
+    },
+    "parseCmyka alpha handling falls back to the default alpha of 1 when alpha is explicitly undefined": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03220799999999713,
+        0.028832999999998776,
+        0.031125000000002956
+      ]
+    },
+    "parseCmyka alpha handling treats an explicit null alpha as Number(null) = 0, not the default": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.030959000000002845,
+        0.024667000000000883,
+        0.02516700000000327
+      ]
+    },
+    "parseCmyka alpha handling accepts an explicit alpha of 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02245800000000031,
+        0.021624999999993122,
+        0.022041999999999007
+      ]
+    },
+    "parseCmyka clamping of c, m, y, k channels clamps c above 100 down to 100": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.022916999999999632,
+        0.020958000000000254,
+        0.02233299999999616
+      ]
+    },
+    "parseCmyka clamping of c, m, y, k channels clamps c below 0 up to 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02658299999999514,
+        0.026832999999996332,
+        0.02720899999999915
+      ]
+    },
+    "parseCmyka clamping of c, m, y, k channels clamps m and y above 100 down to 100": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02183300000000088,
+        0.021582999999999686,
+        0.02174999999999727
+      ]
+    },
+    "parseCmyka clamping of c, m, y, k channels clamps k below 0 up to 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.024124999999997954,
+        0.020166000000003237,
+        0.02395900000000495
+      ]
+    },
+    "parseCmyka clamping of c, m, y, k channels clamps all negative channel values up to 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.0277499999999975,
+        0.025375000000003922,
+        0.02562499999999801
+      ]
+    },
+    "parseCmyka numeric string inputs parses numeric strings for c, m, y, k and a": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.024833000000000993,
+        0.023167000000000826,
+        0.023707999999999174
+      ]
+    },
+    "parseCmyka numeric string inputs parses all-zero numeric strings as white": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02529100000000284,
+        0.02666600000000585,
+        0.02420800000000156
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 11,
+      "covered": 6,
+      "skipped": 0,
+      "pct": 54.54
+    },
+    "functions": {
+      "total": 5,
+      "covered": 3,
+      "skipped": 0,
+      "pct": 60
+    },
+    "statements": {
+      "total": 14,
+      "covered": 8,
+      "skipped": 0,
+      "pct": 57.14
+    },
+    "branches": {
+      "total": 13,
+      "covered": 7,
+      "skipped": 0,
+      "pct": 53.84
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

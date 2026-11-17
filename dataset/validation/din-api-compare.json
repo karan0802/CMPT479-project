@@ -1,0 +1,250 @@
+{
+  "functionId": "din-api-compare",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "compare returns LT when the first bigint is less than the second": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.39129199999999287,
+        0.3977920000000097,
+        0.3894999999999982
+      ]
+    },
+    "compare returns GT when the first bigint is greater than the second": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04983400000000415,
+        0.05025000000000546,
+        0.049291000000010854
+      ]
+    },
+    "compare returns EQ when the two bigints are equal": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03887499999999022,
+        0.04208299999999099,
+        0.042416000000002896
+      ]
+    },
+    "compare returns EQ when comparing zero to zero": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.043958000000003494,
+        0.04083400000001802,
+        0.03995899999998187
+      ]
+    },
+    "compare returns LT when the first bigint is negative and the second is zero": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03700000000000614,
+        0.039749999999997954,
+        0.037750000000016826
+      ]
+    },
+    "compare returns GT when the first bigint is zero and the second is negative": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.025999999999982037,
+        0.02708300000000463,
+        0.027458000000024185
+      ]
+    },
+    "compare returns LT when comparing a negative bigint to a positive bigint": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.025583999999980733,
+        0.026542000000006283,
+        0.02708300000000463
+      ]
+    },
+    "compare returns GT when comparing a positive bigint to a negative bigint": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03291699999999764,
+        0.03037500000002069,
+        0.030249999999995225
+      ]
+    },
+    "compare returns EQ when comparing two equal negative bigints": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03462500000000546,
+        0.035333000000008496,
+        0.03450000000000841
+      ]
+    },
+    "compare returns LT when comparing two negative bigints where the first is more negative": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.039292000000017424,
+        0.04258300000000759,
+        0.040124999999989086
+      ]
+    },
+    "compare returns GT when comparing two negative bigints where the first is less negative": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02666600000000585,
+        0.0262079999999969,
+        0.02733299999999872
+      ]
+    },
+    "compare handles very large bigints correctly for LT": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.030540999999999485,
+        0.02954099999999471,
+        0.028833000000020093
+      ]
+    },
+    "compare handles very large bigints correctly for GT": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.022208000000006223,
+        0.02200000000001978,
+        0.021250000000009095
+      ]
+    },
+    "compare handles very large bigints correctly for EQ": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02049999999999841,
+        0.02229099999999562,
+        0.0201669999999865
+      ]
+    },
+    "compare handles very large negative bigints correctly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02049999999999841,
+        0.02095800000000736,
+        0.03262499999999591
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 6,
+      "covered": 6,
+      "skipped": 0,
+      "pct": 100
+    },
+    "functions": {
+      "total": 1,
+      "covered": 1,
+      "skipped": 0,
+      "pct": 100
+    },
+    "statements": {
+      "total": 6,
+      "covered": 6,
+      "skipped": 0,
+      "pct": 100
+    },
+    "branches": {
+      "total": 4,
+      "covered": 4,
+      "skipped": 0,
+      "pct": 100
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

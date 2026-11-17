@@ -1,0 +1,372 @@
+{
+  "functionId": "col-lab-parseLaba",
+  "extractionOk": true,
+  "compiles": false,
+  "compileDiagnostics": [
+    "extracted/colord/src/colorModels/lab.parseLaba.generated.test.ts(132,34): error TS2345: Argument of type 'LabaColor' is not assignable to parameter of type 'InputObject'.",
+    "  Index signature for type 'string' is missing in type 'LabaColor'."
+  ],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "parseLaba input validation returns null when l is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.5577500000000128,
+        0.5140839999999969,
+        0.5609159999999989
+      ]
+    },
+    "parseLaba input validation returns null when a is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.059791000000004146,
+        0.08054099999999664,
+        0.06545799999999957
+      ]
+    },
+    "parseLaba input validation returns null when b is missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04270800000000463,
+        0.04625000000000057,
+        0.06270800000000065
+      ]
+    },
+    "parseLaba input validation returns null when l, a and b are all missing": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05629199999999912,
+        0.05624999999999858,
+        0.052208000000000254
+      ]
+    },
+    "parseLaba input validation returns null when a required value is explicitly null": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04433400000000631,
+        0.04362499999999869,
+        0.04637500000000472
+      ]
+    },
+    "parseLaba input validation returns null when a required value is explicitly undefined": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.037582999999997924,
+        0.03479199999999594,
+        0.05287500000000023
+      ]
+    },
+    "parseLaba input validation treats 0 as a present value and does not return null": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.14674999999999727,
+        0.14441599999999966,
+        0.1483339999999984
+      ]
+    },
+    "parseLaba alpha handling defaults alpha to 1 when it is omitted": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08995799999999576,
+        0.07937500000000597,
+        0.08466599999999858
+      ]
+    },
+    "parseLaba alpha handling passes through a valid alpha value unchanged": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05858299999999872,
+        0.05574999999999619,
+        0.05837499999999807
+      ]
+    },
+    "parseLaba alpha handling clamps alpha values above 1 down to 1": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06425000000000125,
+        0.05662500000000392,
+        0.061457999999994684
+      ]
+    },
+    "parseLaba alpha handling clamps negative alpha values up to 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03945799999999622,
+        0.03708300000000264,
+        0.041125000000000966
+      ]
+    },
+    "parseLaba known color conversions converts l=0, a=0, b=0 to black": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.0678750000000008,
+        0.06320800000000304,
+        0.09045899999999563
+      ]
+    },
+    "parseLaba known color conversions converts l=100, a=0, b=0 to white": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.08337500000000375,
+        0.07662499999999994,
+        0.09299999999999642
+      ]
+    },
+    "parseLaba numeric string inputs accepts numeric strings and produces the same result as numbers": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.07633300000000531,
+        0.0816250000000025,
+        0.09045799999999815
+      ]
+    },
+    "parseLaba numeric string inputs produces NaN components for a non-numeric string": {
+      "statuses": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "flaky": false,
+      "failureMessages": [
+        "AssertionError: expected false to be true // Object.is equality\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/lab.parseLaba.generated.test.ts:93:38\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected false to be true // Object.is equality\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/lab.parseLaba.generated.test.ts:93:38\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected false to be true // Object.is equality\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/lab.parseLaba.generated.test.ts:93:38\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64"
+      ],
+      "durations": [
+        2.245874999999998,
+        2.082041000000004,
+        2.2213749999999948
+      ]
+    },
+    "parseLaba lightness clamping clamps negative l values to 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05849999999999511,
+        0.0516669999999948,
+        0.07025000000000148
+      ]
+    },
+    "parseLaba lightness clamping clamps l values above 400 to 400": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04462500000001057,
+        0.04154199999999264,
+        0.047584000000000515
+      ]
+    },
+    "parseLaba round-trip conversion via rgbaToLaba round-trips rgba(0, 0, 0, 1) through Lab": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.11958300000000577,
+        0.11537500000000023,
+        0.12316700000000935
+      ]
+    },
+    "parseLaba round-trip conversion via rgbaToLaba round-trips rgba(255, 255, 255, 1) through Lab": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05708400000000324,
+        0.04345800000000111,
+        0.059333000000009406
+      ]
+    },
+    "parseLaba round-trip conversion via rgbaToLaba round-trips rgba(255, 0, 0, 1) through Lab": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03641600000000267,
+        0.03416599999999903,
+        0.05187499999999545
+      ]
+    },
+    "parseLaba round-trip conversion via rgbaToLaba round-trips rgba(0, 255, 0, 1) through Lab": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03516700000000128,
+        0.03279100000000312,
+        0.05720900000000029
+      ]
+    },
+    "parseLaba round-trip conversion via rgbaToLaba round-trips rgba(0, 0, 255, 1) through Lab": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03537500000000193,
+        0.03383399999999881,
+        0.048583000000007814
+      ]
+    },
+    "parseLaba round-trip conversion via rgbaToLaba round-trips rgba(128, 128, 128, 1) through Lab": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04020900000000438,
+        0.031791999999995824,
+        0.04745899999998926
+      ]
+    },
+    "parseLaba round-trip conversion via rgbaToLaba round-trips rgba(200, 120, 50, 0.8) through Lab": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.033709000000001765,
+        0.04287499999999511,
+        0.04754099999999539
+      ]
+    },
+    "parseLaba round-trip conversion via rgbaToLaba round-trips rgba(10, 200, 90, 0.33) through Lab": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03316699999999173,
+        0.038167000000001394,
+        0.045457999999996446
+      ]
+    }
+  },
+  "coverage": null,
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

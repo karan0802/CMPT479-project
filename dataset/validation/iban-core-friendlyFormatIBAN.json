@@ -1,0 +1,294 @@
+{
+  "functionId": "iban-core-friendlyFormatIBAN",
+  "extractionOk": true,
+  "compiles": false,
+  "compileDiagnostics": [
+    "extracted/ibantools/ibantools.friendlyFormatIBAN.generated.test.ts(80,5): error TS2578: Unused '@ts-expect-error' directive."
+  ],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "friendlyFormatIBAN formats a valid Dutch IBAN with default space separator": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.5777909999999977,
+        0.5887910000000005,
+        0.5602500000000035
+      ]
+    },
+    "friendlyFormatIBAN formats a valid Dutch IBAN with a custom separator": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05991700000000577,
+        0.0643749999999983,
+        0.05666699999999736
+      ]
+    },
+    "friendlyFormatIBAN removes existing spaces and dashes before reformatting": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05691699999999855,
+        0.06270800000000065,
+        0.06354100000000074
+      ]
+    },
+    "friendlyFormatIBAN uppercases lowercase input before formatting": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.051250000000003126,
+        0.0475410000000025,
+        0.04783400000000171
+      ]
+    },
+    "friendlyFormatIBAN formats an IBAN whose length is an exact multiple of 4": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.043292000000000996,
+        0.043082999999995764,
+        0.0551669999999973
+      ]
+    },
+    "friendlyFormatIBAN does not add a trailing separator when length is a multiple of 4": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04458299999999582,
+        0.044832999999997014,
+        0.046416999999998154
+      ]
+    },
+    "friendlyFormatIBAN returns the input unchanged (just uppercased) when 4 characters or fewer": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05120900000000006,
+        0.052832999999999686,
+        0.05183399999999949
+      ]
+    },
+    "friendlyFormatIBAN returns an empty string when given an empty string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03595800000000082,
+        0.03737500000000438,
+        0.03666700000000134
+      ]
+    },
+    "friendlyFormatIBAN uses a multi-character separator when provided": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04141599999999812,
+        0.06312499999999943,
+        0.04404199999999747
+      ]
+    },
+    "friendlyFormatIBAN uses an empty string separator to effectively leave the IBAN electronic": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04700000000000415,
+        0.05712500000000631,
+        0.04941699999999827
+      ]
+    },
+    "friendlyFormatIBAN treats a null separator the same as the default space separator": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.030166000000001247,
+        0.032541999999999405,
+        0.03158400000000228
+      ]
+    },
+    "friendlyFormatIBAN formats IBANs from multiple countries correctly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03754200000000196,
+        0.04120900000000205,
+        0.0398750000000021
+      ]
+    },
+    "friendlyFormatIBAN returns null when iban is undefined": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.027416999999999803,
+        0.02941699999999514,
+        0.028708000000001732
+      ]
+    },
+    "friendlyFormatIBAN returns null when iban is not a string (number)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01937499999999659,
+        0.022334000000000742,
+        0.029458000000005313
+      ]
+    },
+    "friendlyFormatIBAN returns null when iban is not a string (object)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.019249999999999545,
+        0.022040999999994426,
+        0.02108400000000188
+      ]
+    },
+    "friendlyFormatIBAN returns null when iban is not a string (null)": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01970800000000139,
+        0.021374999999999034,
+        0.020583000000002016
+      ]
+    },
+    "friendlyFormatIBAN returns null when iban is not a string even if separator is valid": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.025625000000005116,
+        0.036583000000000254,
+        0.024917000000002076
+      ]
+    },
+    "friendlyFormatIBAN handles mixed case and whitespace together": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.033958999999995854,
+        0.025666999999998552,
+        0.036875000000009095
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 312,
+      "covered": 36,
+      "skipped": 0,
+      "pct": 11.53
+    },
+    "functions": {
+      "total": 33,
+      "covered": 4,
+      "skipped": 0,
+      "pct": 12.12
+    },
+    "statements": {
+      "total": 328,
+      "covered": 36,
+      "skipped": 0,
+      "pct": 10.97
+    },
+    "branches": {
+      "total": 229,
+      "covered": 7,
+      "skipped": 0,
+      "pct": 3.05
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

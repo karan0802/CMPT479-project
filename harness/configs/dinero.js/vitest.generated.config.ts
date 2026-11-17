@@ -7,7 +7,9 @@ export default defineConfig({
   test: {
     globals: false,
     environment: 'node',
-    include: ['packages/*/src/**/*.generated.test.ts'],
+    // TEST_INCLUDE scopes a run to exactly one function's test file, so
+    // Stryker's test-relatedness never mixes results across functions.
+    include: [process.env.TEST_INCLUDE ?? 'packages/*/src/**/*.generated.test.ts'],
     exclude: ['node_modules', 'dist'],
     reporters: ['default', 'json'],
     outputFile: { json: process.env.VITEST_JSON ?? 'reports/vitest.json' },

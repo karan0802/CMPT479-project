@@ -1,0 +1,250 @@
+{
+  "functionId": "din-api-toUnits",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "toUnits scalar base currencies splits the amount into a major unit and a remainder": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.6141250000000014,
+        0.5986249999999984,
+        0.6392500000000041
+      ]
+    },
+    "toUnits scalar base currencies returns a plain array when no transformer is provided": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.3374170000000163,
+        0.3209160000000111,
+        0.3338329999999985
+      ]
+    },
+    "toUnits scalar base currencies returns a zero remainder when the amount divides evenly": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05091600000000085,
+        0.057125000000013415,
+        0.05324999999999136
+      ]
+    },
+    "toUnits scalar base currencies returns [0, 0] for a zero amount": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05591699999999378,
+        0.05562499999999204,
+        0.059708999999998014
+      ]
+    },
+    "toUnits scalar base currencies treats a scale of 0 as a single, undivided unit": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04733300000000895,
+        0.04733299999998053,
+        0.04733300000000895
+      ]
+    },
+    "toUnits scalar base currencies supports a base other than 10": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04295799999999872,
+        0.03970899999998778,
+        0.03895900000000552
+      ]
+    },
+    "toUnits scalar base currencies is consistent with the calculator primitives for negative amounts": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04204099999998334,
+        0.04266699999999446,
+        0.04229200000000333
+      ]
+    },
+    "toUnits scalar base currencies wrapping the base in a single-element array yields the same result as the scalar base": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04174999999997908,
+        0.040124999999989086,
+        0.04420799999999758
+      ]
+    },
+    "toUnits multi-base currencies produces one entry per base plus a final remainder": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.1279999999999859,
+        0.12808300000000372,
+        0.1312910000000045
+      ]
+    },
+    "toUnits multi-base currencies resolves every level to zero when the amount is zero": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.05895799999998985,
+        0.05908300000001532,
+        0.057582999999993945
+      ]
+    },
+    "toUnits multi-base currencies scales with the number of base levels": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04187500000000455,
+        0.042374999999992724,
+        0.04050000000000864
+      ]
+    },
+    "toUnits transformer passes the computed value and currency to the transformer": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.09600000000000364,
+        0.08545799999998849,
+        0.09858399999998824
+      ]
+    },
+    "toUnits transformer returns whatever the transformer returns instead of the raw array": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04024999999998613,
+        0.040625000000005684,
+        0.04091700000000742
+      ]
+    },
+    "toUnits transformer is not invoked when omitted, returning the raw array": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.031542000000001735,
+        0.02816699999999628,
+        0.02341599999999744
+      ]
+    },
+    "toUnits currying can be reused across multiple dinero objects independently": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.029291000000000622,
+        0.029124999999993406,
+        0.03675000000001205
+      ]
+    }
+  },
+  "coverage": {
+    "lines": {
+      "total": 14,
+      "covered": 14,
+      "skipped": 0,
+      "pct": 100
+    },
+    "functions": {
+      "total": 5,
+      "covered": 5,
+      "skipped": 0,
+      "pct": 100
+    },
+    "statements": {
+      "total": 16,
+      "covered": 16,
+      "skipped": 0,
+      "pct": 100
+    },
+    "branches": {
+      "total": 4,
+      "covered": 4,
+      "skipped": 0,
+      "pct": 100
+    }
+  },
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}

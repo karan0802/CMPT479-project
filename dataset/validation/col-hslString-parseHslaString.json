@@ -1,0 +1,561 @@
+{
+  "functionId": "col-hslString-parseHslaString",
+  "extractionOk": true,
+  "compiles": true,
+  "compileDiagnostics": [],
+  "loads": true,
+  "isolationOk": true,
+  "perTest": {
+    "parseHslaString comma-separated functional syntax parses primary hues at full saturation and 50% lightness": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        1.0481249999999989,
+        0.9947090000000003,
+        1.0105840000000015
+      ]
+    },
+    "parseHslaString comma-separated functional syntax parses the classic dark CSS keyword colors at 25% lightness": {
+      "statuses": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "flaky": false,
+      "failureMessages": [
+        "AssertionError: expected { r: 127.5, g: +0, b: +0, a: 1 } to deeply equal { r: 128, g: +0, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:16:52\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: +0, b: +0, a: 1 } to deeply equal { r: 128, g: +0, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:16:52\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: +0, b: +0, a: 1 } to deeply equal { r: 128, g: +0, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:16:52\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64"
+      ],
+      "durations": [
+        2.4606250000000003,
+        2.4736660000000015,
+        2.468625000000003
+      ]
+    },
+    "parseHslaString comma-separated functional syntax parses black, white and gray": {
+      "statuses": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "flaky": false,
+      "failureMessages": [
+        "AssertionError: expected { r: 127.5, g: 127.5, b: 127.5, a: 1 } to deeply equal { r: 128, g: 128, b: 128, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:28:50\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 127.5, b: 127.5, a: 1 } to deeply equal { r: 128, g: 128, b: 128, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:28:50\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 127.5, b: 127.5, a: 1 } to deeply equal { r: 128, g: 128, b: 128, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:28:50\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64"
+      ],
+      "durations": [
+        0.3927499999999924,
+        0.3795000000000073,
+        0.3875419999999963
+      ]
+    },
+    "parseHslaString comma-separated functional syntax parses alpha as a plain number": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.10570799999999281,
+        0.09975000000000023,
+        0.1042500000000075
+      ]
+    },
+    "parseHslaString comma-separated functional syntax parses alpha expressed as a percentage": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.048332999999999515,
+        0.04720899999999517,
+        0.04820800000000247
+      ]
+    },
+    "parseHslaString comma-separated functional syntax allows an alpha value on the \"hsl\" function name (not just \"hsla\")": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.0340839999999929,
+        0.031708999999992216,
+        0.03275000000000716
+      ]
+    },
+    "parseHslaString comma-separated functional syntax tolerates extra internal whitespace": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04820799999998826,
+        0.04574999999999818,
+        0.04733300000000895
+      ]
+    },
+    "parseHslaString comma-separated functional syntax is case-insensitive": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.06079099999999471,
+        0.06116699999999753,
+        0.063083000000006
+      ]
+    },
+    "parseHslaString comma-separated functional syntax accepts decimal values that resolve to a clean color": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.04904200000000003,
+        0.05112499999999898,
+        0.04925000000000068
+      ]
+    },
+    "parseHslaString whitespace (slash) functional syntax parses hue/saturation/lightness separated by spaces": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.2108339999999913,
+        0.20600000000000307,
+        0.2083329999999961
+      ]
+    },
+    "parseHslaString whitespace (slash) functional syntax parses an alpha value after a slash as a plain number": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.03929200000000321,
+        0.03895900000000552,
+        0.04420899999999506
+      ]
+    },
+    "parseHslaString whitespace (slash) functional syntax parses an alpha value after a slash as a percentage": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.032250000000004775,
+        0.030208999999999264,
+        0.03066599999999653
+      ]
+    },
+    "parseHslaString whitespace (slash) functional syntax tolerates extra internal whitespace": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.023666000000005738,
+        0.023249999999990223,
+        0.02304200000000378
+      ]
+    },
+    "parseHslaString hue units treats a bare number as degrees": {
+      "statuses": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "flaky": false,
+      "failureMessages": [
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:94:53\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:94:53\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:94:53\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64"
+      ],
+      "durations": [
+        0.22629100000000335,
+        0.2262500000000074,
+        0.22970800000000224
+      ]
+    },
+    "parseHslaString hue units converts an explicit \"deg\" unit the same as a bare number": {
+      "statuses": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "flaky": false,
+      "failureMessages": [
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:98:56\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:98:56\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:98:56\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64"
+      ],
+      "durations": [
+        0.1612920000000031,
+        0.1650419999999997,
+        0.1680419999999998
+      ]
+    },
+    "parseHslaString hue units converts \"grad\" units to degrees (400grad = 360deg)": {
+      "statuses": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "flaky": false,
+      "failureMessages": [
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:102:58\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:102:58\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:102:58\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64"
+      ],
+      "durations": [
+        0.15099999999999625,
+        0.15116700000000094,
+        0.1597500000000025
+      ]
+    },
+    "parseHslaString hue units converts \"turn\" units to degrees (1turn = 360deg)": {
+      "statuses": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "flaky": false,
+      "failureMessages": [
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:106:59\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:106:59\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:106:59\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64"
+      ],
+      "durations": [
+        0.12012500000000159,
+        0.1209169999999915,
+        0.12624999999999886
+      ]
+    },
+    "parseHslaString hue units converts \"rad\" units to degrees (pi/2 rad = 90deg)": {
+      "statuses": [
+        "failed",
+        "failed",
+        "failed"
+      ],
+      "flaky": false,
+      "failureMessages": [
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:110:72\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:110:72\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64",
+        "AssertionError: expected { r: 127.5, g: 255, b: +0, a: 1 } to deeply equal { r: 128, g: 255, b: +0, a: 1 }\n    at /Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/extracted/colord/src/colorModels/hslString.parseHslaString.generated.test.ts:110:72\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20\n    at new Promise (<anonymous>)\n    at runWithTimeout (file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2272:10)\n    at file:///Users/sadhikahuria/Documents/Alish/CMPT479-project/harness/node_modules/@vitest/runner/dist/chunk-artifact.js:2956:64"
+      ],
+      "durations": [
+        0.13429199999998787,
+        0.12579100000000665,
+        0.12699999999999534
+      ]
+    },
+    "parseHslaString clamping and wrapping of out-of-range values wraps a hue greater than 360 degrees": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.033541999999997074,
+        0.028874999999999318,
+        0.030167000000005828
+      ]
+    },
+    "parseHslaString clamping and wrapping of out-of-range values wraps a negative hue": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02258400000000904,
+        0.022499999999993747,
+        0.024749999999997385
+      ]
+    },
+    "parseHslaString clamping and wrapping of out-of-range values clamps saturation above 100% down to 100%": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.020624999999995453,
+        0.020665999999991413,
+        0.022292000000007306
+      ]
+    },
+    "parseHslaString clamping and wrapping of out-of-range values clamps negative saturation up to 0%": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.019958000000002585,
+        0.01966600000000085,
+        0.02154199999999662
+      ]
+    },
+    "parseHslaString clamping and wrapping of out-of-range values clamps lightness above 100% down to 100%": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01933400000000063,
+        0.019291000000009717,
+        0.02112500000001205
+      ]
+    },
+    "parseHslaString clamping and wrapping of out-of-range values clamps negative lightness up to 0%": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01875000000001137,
+        0.01895799999999781,
+        0.02066699999998889
+      ]
+    },
+    "parseHslaString clamping and wrapping of out-of-range values clamps alpha above 1 down to 1": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.018959000000009496,
+        0.018792000000004805,
+        0.022083999999992443
+      ]
+    },
+    "parseHslaString clamping and wrapping of out-of-range values clamps negative alpha up to 0": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.018541999999996506,
+        0.018749999999997158,
+        0.020415999999997325
+      ]
+    },
+    "parseHslaString invalid input returns null for an empty string": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.02341599999999744,
+        0.023624999999995566,
+        0.026916999999997415
+      ]
+    },
+    "parseHslaString invalid input returns null when the saturation is missing its percent sign": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01620900000000347,
+        0.016125000000002387,
+        0.01783299999999599
+      ]
+    },
+    "parseHslaString invalid input returns null when the lightness is missing its percent sign": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.020124999999993065,
+        0.019708000000008496,
+        0.020833000000010315
+      ]
+    },
+    "parseHslaString invalid input returns null for a missing closing parenthesis": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.016542000000001167,
+        0.01633299999998883,
+        0.018208000000001334
+      ]
+    },
+    "parseHslaString invalid input returns null for a trailing comma with no alpha value": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01649999999999352,
+        0.016166999999995824,
+        0.017082999999999515
+      ]
+    },
+    "parseHslaString invalid input returns null for an alpha value with an invalid unit": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01762499999999534,
+        0.017125000000007162,
+        0.018375000000006025
+      ]
+    },
+    "parseHslaString invalid input returns null when mixing comma and space separators": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.015541999999996392,
+        0.015416999999999348,
+        0.017250000000004206
+      ]
+    },
+    "parseHslaString invalid input returns null for a completely different color function": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.01520800000000122,
+        0.015165999999993574,
+        0.016834000000002902
+      ]
+    },
+    "parseHslaString invalid input returns null for a non-numeric hue": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.015416000000001873,
+        0.014834000000007563,
+        0.016417000000004123
+      ]
+    },
+    "parseHslaString invalid input returns null when there is leading or trailing whitespace outside the parentheses": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.021874999999994316,
+        0.020916999999997188,
+        0.023249999999990223
+      ]
+    },
+    "parseHslaString invalid input returns null for plain text": {
+      "statuses": [
+        "passed",
+        "passed",
+        "passed"
+      ],
+      "flaky": false,
+      "failureMessages": [],
+      "durations": [
+        0.0153749999999917,
+        0.015292000000002304,
+        0.017250000000004206
+      ]
+    }
+  },
+  "coverage": null,
+  "toolchain": {
+    "node": "v26.6.0",
+    "npm": "11.18.0"
+  }
+}
